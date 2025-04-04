@@ -10,7 +10,7 @@ import Layout from '../layouts/Layout.astro';
 	<body>
 		<header id="header" class="fixed-top ">
 		  <div class="container d-flex align-items-center justify-content-between">
-			<h1 class="logo"><a href="index.html">COMPDES 2025</a></h1>
+			<h1 class="logo"><a href="index.html" class="!text-[20px]">COMPDES 2025</a></h1>
 	  
 			<nav id="navbar" class="navbar">
 			  <ul>
@@ -27,21 +27,21 @@ import Layout from '../layouts/Layout.astro';
 		  </div>
 		</header>
 	  
-		<section class="bg-red-500">
-	  
-		  <div class="container-fluid" data-aos="fade-up">
-			<div class="row justify-content-center">
-			  <div class="col-xl-6 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-				<h1>COMPDES 2025</h1>
-				<h2>XVII CONGRESO DE COMPUTACIÓN PARA EL DESARROLLO</h2>
-				<p/>
-				<h2>Liberia (Costa Rica) del 17 al 19 de julio de 2024</h2>
-	  
-	  
-			   </div>
-	  
-		   </div>
-		</div>
+		<section class="bg-[#114e57] h-[800px]" style="background: linear-gradient(180deg, rgba(17,78,80,1) 52%, rgba(7,43,45,1) 100%)">
+		  <div class="container-fluid h-full" data-aos="fade-up">
+				<div class="row justify-content-center h-full">
+					<div class="flex flex-col justify-center items-center h-full">
+						<img src="/assets/img/logo-compdes-white.png" alt="Compdes white" class="w-12 mb-6"/>
+						<h1 class="text-[20px]! text-white">XVII CONGRESO DE COMPUTACIÓN PARA EL DESARROLLO</h1>
+						<div class="flex gap-6">
+							<h2 class="text-[120px]! text-white">COMPDES</h2>
+							<h3 class="text-[120px]! text-[#B54745]">2025</h3>
+						</div>
+						<p class="text-xl! text-white">Quetzaltenango, Guatemala del 16 al 18 de julio de 2025</p>
+						<a href="#informacion" class="bg-[#B54745] border-1 border-[#B54745] text-white px-10 py-2 mt-4 rounded-sm hover:bg-transparent">Conoce más</a>
+					</div>
+				</div>
+			</div>
 		</section>
 	  
 		<main id="main">
