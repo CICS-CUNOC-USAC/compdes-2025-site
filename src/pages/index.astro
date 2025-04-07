@@ -3,7 +3,7 @@ import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout>
-    <header id="header" class="fixed top-0 w-full">
+    <header id="header" class="fixed top-0 w-full pr-3! md:pr-0!">
       <div class="container flex items-center justify-between pl-18">
         <h1 class="logo">
           <a href="index.html" class="!text-[20px]">COMPDES 2025</a>
@@ -127,18 +127,14 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
         <!--- ========================================================================================= -->
-        <div
-          class="w-full text-center bg-brand-green py-12 text-white font-bold text-2xl"
-          >
-        </div>
-        <section id="cronograma" class="commonGreenSection commonGreenSection-bg pb-10!">
+        <section id="cronograma" class="commonGreenSection commonGreenSection-bg bg-[url(/assets/img/hero-background-mobile.png)] md:bg-[url(/assets/img/hero-background.png)] bg-cover bg-center pb-10">
           <div class="flex justify-center w-full" data-aos="fade-up">
-            <div class="section-title pb-0!">
+            <div class="section-title pb-0! pt-12">
               <h2 class="fontWhite">Cronograma de actividades</h2>
             </div>
           </div>
           <div class="w-10/12 md:w-7/12 lg:6/12 mx-auto relative text-[#B54745] ">
-            <div class="border-l-2 mt-10">
+            <div class="border-l-2 mt-10 mb-10">
               <!-- Tarjeta 1 -->
               <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-brand-red text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
                 data-aos="zoom-in" data-aos-delay="300"
@@ -202,318 +198,101 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </section>
         <!--- ========================================================================================= -->
-        <section id="organizacion" class="p-10">
+        <section id="organizacion" class="md:p-10">
           <div class="container" data-aos="fade-up">
-            <h2>Organización del Congreso</h2>
+            <div class="section-title pb-0!">
+              <h2 class="text-[#B54745]! pb-0! margin-b-0! px-6 pt-10 md:pt-0">Organización y Agenda del Evento Presencial</h2>
+            </div>
             <br />
-            <div class="row gy-4">
-              <div
-                class="col-lg-6 col-md-6"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-                >
-                <div class="icon-box iconbox-teal">
-                  <h4>Comité Científico</h4>
-                  <ul style="text-align:left">
+
+            <div class="px-6 pb-6 md:max-w-3xl mx-auto">
+              <div class="bg-white p-6 rounded-lg shadow">
+                <!-- Miércoles, 23 de julio -->
+                <div class="mb-8">
+                  <div class="flex flex-row gap-2">
+                    <img src="/assets/img/calendar-days.png" class="img-fluid animated w-[20px] h-[20px] mt-1"
+                      alt="calendar-icon">
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">Miércoles, 23 de julio</h2>
+                  </div>
+                  <ul class="list-disc list-inside space-y-2">
                     <li>
-                      Meziat Luna, Daniel. <i
-                        >Universidad de Alcalá (España) – Presidente
-                      </i>
-                    </li>
-                    <li>
-                      Aguilera Centeno, Narciso Javier. <i
-                        >Universidad Nacional de Ingeniería (Nicaragua)</i
-                        >
-                    </li>
-                    <li>
-                      Alarcos Alcázar, Bernardo. <i
-                        >Universidad de Alcalá (España)</i
-                        >
-                    </li>
-                    <li>Arco, José. <i>Universidad de Alcalá (España)</i></li>
-                    <li>
-                      Barchino, Roberto. <i>Universidad de Alcalá (España)</i>
-                    </li>
-                    <li>
-                      Bengochea, Luis. <i>Universidad de Alcalá (España)</i>
-                    </li>
-                    <li>
-                      Cabrera-Loayza, Ma. Carmen. <i
-                        >Universidad Técnica Particular de Loja (Ecuador)</i
-                        >
-                    </li>
-                    <li>
-                      Calero, Coral. <i
-                        >Universidad de Castilla-La Mancha (España)</i
-                        >
-                    </li>
-                    <li>
-                      Carballo Ruiz, Elmer Arturo. <i
-                        >Universidad de El Salvador</i
-                        >
-                    </li>
-                    <li>
-                      De la Fuente, Pablo. <i
-                        >Universidad de Valladolid (España)</i
-                        >
-                    </li>
-                    <li>Díaz, Bladimir. <i>Universidad de El Salvador</i></li>
-                    <li>
-                      Domínguez, Mª José. <i>Universidad de Alcalá (España)</i>
-                    </li>
-                    <li>
-                      Fernández del Castillo, José Raúl. <i
-                        >Universidad de Alcalá (España)</i
-                        >
-                    </li>
-                    <li>
-                      Forero Paez, Nelson Augusto. <i
-                        >Kryptogenesis - IT Security (Colombia)</i
-                        >
-                    </li>
-                    <li>
-                      García Astete, Margarita. <i
-                        >Universidad de La Serena (Chile)</i
-                        >
-                    </li>
-                    <li>
-                      García Herraiz, Antonio. <i
-                        >Universidad de Alcalá (España)</i
-                        >
-                    </li>
-                    <li>
-                      García Peñalvo, Francisco José. <i
-                        >Universidad de Salamanca (España)</i
-                        >
-                    </li>
-                    <li>
-                      Garita, Cesar. <i>Instituto Tecnológico de Costa Rica</i>
-                    </li>
-                    <li>
-                      González Enríquez, José. <i
-                        >Universidad de Sevilla (España)</i
-                        >
-                    </li>
-                    <li>
-                      Guasch, Daniel. <i
-                        >Universitat Politècnica de Catalunya (España)</i
-                        >
-                    </li>
-                    <li>
-                      Gutiérrez, José María. <i
-                        >Universidad de Alcalá (España)</i
-                        >
-                    </li>
-                    <li>
-                      Gutiérrez-De-Mesa, José-Antonio. <i
-                        >Universidad de Alcalá (España)</i
-                        >
-                    </li>
-                    <li>
-                      Hernández Ramírez, Oscar Guillermo. <i
-                        >Univ. Nacional Autónoma de Honduras</i
-                        >
-                    </li>
-                    <li>
-                      Jaillier, Erika. <i
-                        >Universidad Pontificia Bolivariana (Colombia)</i
-                        >
-                    </li>
-                    <li>
-                      Llanos, Diego R. <i>Universidad de Valladolid (España)</i>
-                    </li>
-                    <li>
-                      López, Alicia Beatriz. <i
-                        >Universidad Nacional de Mar del Plata (Argentina)</i
-                        >
-                    </li>
-                    <li>
-                      López, José Mario. <i
-                        >Universidad Nacional Autónoma de Honduras</i
-                        >
-                    </li>
-                    <li>
-                      López Poveda, Anayanci. <i
-                        >Universidad Nacional de Ingeniería (Nicaragua)</i
-                        >
-                    </li>
-                    <li>
-                      López Quiroa, Christian Alberto. <i
-                        >Universidad de San Carlos (Guatemala)</i
-                        >
-                    </li>
-                    <li>
-                      López Villegas, Óscar. <i
-                        >Instituto Tecnológico de Costa Rica</i
-                        >
-                    </li>
-                    <li>
-                      McKensy Sambola, Dexon. <i
-                        >Bluefields Indian & Caribbean University (Nicaragua)</i
-                        >
-                    </li>
-                    <li>Mejía, Guillermo. <i>Universidad de El Salvador</i></li>
-                    <li>
-                      Munguía-Mena, Marco. <i
-                        >Universidad Nacional de Ingeniería (Nicaragua)</i
-                        >
-                    </li>
-                    <li>
-                      Oyarzo, Jaime. <i>Universidad de Alcalá (España)</i>
-                    </li>
-                    <li>
-                      Palma Mendoza, Raúl José. <i
-                        >Universidad Nacional Autónoma de Honduras</i
-                        >
-                    </li>
-                    <li>
-                      Población, Óscar. <i> Universidad de Alcalá (España)</i>
-                    </li>
-                    <li>Portillo, Julio. <i>Universidad de El Salvador</i></li>
-                    <li>
-                      Prieto, Manuel. <i>Universidad de Alcalá (España)</i>
-                    </li>
-                    <li>
-                      Restrepo Bustamante, Félix Andrés. <i
-                        >Universidad de Alcalá (España)</i
-                        >
-                    </li>
-                    <li>
-                      Romero-Peláez, Audrey. <i
-                        >Universidad Técnica Particular de Loja (Ecuador)</i
-                        >
-                    </li>
-                    <li>
-                      Sánchez Prieto, Sebastián. <i
-                        >Universidad de Alcalá (España)</i
-                        >
-                    </li>
-                    <li>
-                      Vegas, Jesús. <i>Universidad de Valladolid (España)</i>
-                    </li>
-                    <li>
-                      Velasco, Juan Ramón. <i>Universidad de Alcalá (España)</i>
-                    </li>
-                    <li>
-                      Vicente Rodríguez, Antonio J. de. <i
-                        >Universidad de Alcalá (España)</i
-                        >
+                      <span class="font-semibold">Inauguración (Horario por confirmar):</span>
+                      <ul class="list-disc list-inside pl-4 mt-2 space-y-1">
+                        <li>Palabras de bienvenida.</li>
+                        <li>Conferencia inaugural (Ponente por definir).</li>
+                        <li>Sesiones técnicas y presentaciones orales.</li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div
-                class="col-lg-6 col-md-6"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-                >
-                <div class="icon-box iconbox-teal">
-                  <h4>Comité de Organización</h4>
-                  <ul style="text-align:left">
-                    <li>
-                      Beyker Obando. <i
-                        >Universidad de Costa Rica - Presidente</i
-                        >
-                    </li>
-                    <li>Rafael Martínez. <i>Universidad de Costa Rica</i></li>
-                    <li>
-                      Luis Eduardo Amaya. <i>Universidad de Costa Rica</i>
-                    </li>
-                    <li>Óscar López. <i>Tecnológico de Costa Rica</i></li>
-                    <li>
-                      Daniel Meziat. <i>Universidad de Alcalá (España)</i>
-                    </li>
-                    <li>
-                      Luis Bengochea. <i>Universidad de Alcalá (España)</i>
-                    </li>
+            
+                <!-- Jueves, 24 de julio -->
+                <div class="mb-8">
+                  <div class="flex flex-row gap-2">
+                    <img src="/assets/img/calendar-days.png" class="img-fluid animated w-[20px] h-[20px] mt-1"
+                      alt="calendar-icon">
+                      <h2 class="text-xl font-bold text-gray-800 mb-3">Jueves, 24 de julio</h2>
+                  </div>
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>Sesiones paralelas (mañana y tarde).</li>
+                    <li>Reunión de la Red COMPDES (Horario específico por confirmar).</li>
+                    <li>Actividades de networking.</li>
                   </ul>
                 </div>
-                <br />
-                <div class="icon-box iconbox-teal">
-                  <h4>La Universidad de Costa Rica</h4>
-                  La <u>Universidad de Costa Rica</u> Sede Guanacaste (https://www.ucr.ac.cr/),
-                  es una institución de educación superior abanderada de la enseñanza
-                  humanista y de la excelencia. Desde su constitución en 1940 esta
-                  Institución goza de Autonomía Universitaria y en el 2001 fue declarada
-                  Institución Benemérita de la Educación y la Cultura Costarricense.
-                  La Universidad de Costa Rica aspira a ser una universidad pública
-                  referente en la educación superior internacional, inclusiva, innovadora,
-                  proactiva, sostenible y solidaria. Asimismo, se propone fortalecer
-                  la excelencia académica, la generación y la difusión del conocimiento,
-                  el diálogo de saberes con vocación transformadora, la internacionalización
-                  y la vinculación Universidad-Sociedad-Estado, siendo responsable
-                  y transparente en el uso de los recursos, a fin de promover la
-                  movilidad social ascendente, la búsqueda del bien común y el desarrollo
-                  territorial y nacional.
-                </div>
-                <br />
-                <div class="icon-box iconbox-teal">
-                  <h4>Representantes de la Red Compdes</h4>
-                  <li>
-                    Óscar López. <i>Tecnológico de Costa Rica</i> (Presidente)
-                  </li>
-                  <li>
-                    Daniel Meziat. <i>Universidad de Alcalá (España)</i> (Presidente
-                    de Honor)
-                  </li>
-                  <br />
-                  <li>Alarcón, Francisco. <i>Universidad de El Salvador</i></li>
-                  <li>Amaya, Luis Eduardo. <i>Universidad de Costa Rica</i></li>
-                  <li>
-                    Bárcenas Lezama, Miguel Ángel. <i>UNAN – León (Nicaragua)</i
-                      >
-                  </li>
-                  <li>Bengochea Martínez, Luis. <i>UAH (España)</i></li>
-                  <li>
-                    Carol Hernández, Víctor. <i>CUNOC-USAC (Guatemala)</i>
-                  </li>
-                  <li>
-                    Contreras Mercado, Arnoldo José. <i>UNAN-León (Nicaragua)</i
-                      >
-                  </li>
-                  <li>Chávez Mairena, Luis Eduardo. <i>UNI (Nicaragua)</i></li>
-                  <li>Chicas, Rudy. <i>Universidad de El Salvador</i></li>
-                  <li>
-                    Esquivel Vega, Gaudy. <i>Tecnológico de Costa Rica</i>
-                  </li>
-                  <li>Gross, Eduardo. <i>UNAH (Honduras)</i></li>
-                  <li>Juárez, Nelson. <i>UNI (Nicaragua)</i></li>
-                  <li>López, Christian. <i>CUNOC-USAC (Guatemala)</i></li>
-                  <li>López, Roy. <i>BICU (Nicaragua)</i></li>
-                  <li>López Poveda, Anayanci. <i>UNI (Nicaragua)</i></li>
-                  <li>Mejía Quiroz, Álvaro. <i>UNAN-Managua (Nicaragua)</i></li>
-                  <li>Palma Mendoza, Raúl. <i>UNAH (Honduras)</i></li>
-                  <li>Portillo, Julio. <i>Universidad de El Salvador</i></li>
-                  <li>Sambola, Dexon-Mckensy. <i>BICU (Nicaragua)</i></li>
-                  <li>
-                    Sánchez, José María. <i>Universidad de El Salvador</i>
-                  </li>
-                  <li>Sierra Pac, Oliver. <i>CUNOC-USAC (Guatemala)</i></li>
-                  <li>Vásquez, Rodrigo. <i>Universidad de El Salvador</i></li>
+            
+                <!-- Viernes, 25 de julio -->
+                <div>
+                  <div class="flex flex-row gap-2">
+                    <img src="/assets/img/calendar-days.png" class="img-fluid animated w-[20px] h-[20px] mt-1"
+                      alt="calendar-icon">
+                      <h2 class="text-xl font-bold text-gray-800 mb-3">Viernes, 25 de julio</h2>
+                  </div>
+                 
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>Últimas sesiones técnicas.</li>
+                    <li>Conferencia de clausura (Ponente por definir).</li>
+                    <li>Entrega de reconocimientos.</li>
+                    <li>Clausura oficial.</li>
+                  </ul>
                 </div>
               </div>
             </div>
+            
+
           </div>
         </section>
         <!--- ========================================================================================= -->
-        <section id="contacto" class="commonGreenSection commonGreenSection-bg p-10 md:p-10">
+        <section id="contacto" class="commonGreenSection commonGreenSection-bg p-10 md:p-10 bg-[url(/assets/img/hero-background-mobile.png)] md:bg-[url(/assets/img/hero-background.png)] bg-cover bg-center">
           <div class="container w-full" data-aos="fade-up">
             <div class="w-full">
               <div class="w-full" data-aos="zoom-in" data-aos-delay="300">
                 <div class="fontWhite flex flex-col md:flex-row md:justify-between w-full">
-                  <div>
-                    <h2 class="text-3xl">
+                  <div class="flex flex-col">
+                    <h2 class="text-[45px] mb-4">
                       <font color="#A9F5F2">Contacto</font>
                     </h2>
                     USAC - Centro Universitario de Occidente<br />
-                    E-mail: <a href="mailto:ingenieria.cunoc@usac.edu.gt">
-                    <font color="#A9F5F2">ingenieria.cunoc@usac.edu.gt</font>
-                    </a>
+
+                    <div> Email: <a href="mailto:ingenieria.cunoc@usac.edu.gt">
+                      <font color="#A9F5F2">ingenieria.cunoc@usac.edu.gt</font>
+                      </a>
+                    </div>
+
+                    <div>  Facebook: <a href="https://www.facebook.com/cunocenlinea/?locale=es_LA">
+                      <font color="#A9F5F2">Facebook CUNOC</font>
+                      </a>
+                    </div>
+
+                    <div>  Directorio Telefónico: <a href="https://www.facebook.com/cunocenlinea/?locale=es_LA">
+                      <font color="#A9F5F2">78730000</font>
+                      </a>
+                    </div>
+                   
                     <img src="/assets/img/logo-cunoc.png" class="img-fluid animated w-[350px] mt-6"
-                      alt="Universidad de Costa Rica">
+                      alt="Centro Universitario de Occidente">
                   </div>
-                  <div class="mt-10">
-                    <h3 class="text-2xl text-[#A9F5F2]">Dirección</h3>
+                  <div class="mt-2">
+                    <h3 class="text-[45px] mb-4 text-[#A9F5F2]">Dirección</h3>
                     Universidad de San Carlos de Guatemala, Centro Universitario de Occidente (Quetzaltenango)
                     <div class="mt-3">
                       <div class="md:hidden">
