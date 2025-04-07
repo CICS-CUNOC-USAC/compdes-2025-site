@@ -1,342 +1,677 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<body>
-		<header id="header" class="fixed-top ">
-		  <div class="container d-flex align-items-center justify-content-between">
-			<h1 class="logo"><a href="index.html" class="!text-[20px]">COMPDES 2025</a></h1>
-	  
-			<nav id="navbar" class="navbar">
-			  <ul>
-	  <!--         <li><a class="nav-link scrollto active" href="#hero">.</a></li> --->
-				<li><a class="nav-link scrollto" href="#informacion">Información</a></li>
-				<li><a class="nav-link scrollto" href="#cronograma">Cronograma</a></li>
-				<li><a class="nav-link scrollto" href="#organizacion">Organización</a></li>
-				<li><a class="nav-link scrollto" href="#contacto">Contacto y Sede</a></li>
-				<li><a class="nav-link scrollto" target="_blank" href="https://www.facebook.com/COMPDES"><img src="img/facebook.png" style="width: 20px;"> </a></li>
-			  </ul>
-			  <i class="bi bi-list mobile-nav-toggle"></i>
-			</nav>
-	  
-		  </div>
-		</header>
-	  
-		<section class="bg-[#114e57] h-[800px]" style="background: linear-gradient(180deg, rgba(17,78,80,1) 52%, rgba(7,43,45,1) 100%)">
-		  <div class="container-fluid h-full" data-aos="fade-up">
-				<div class="row justify-content-center h-full">
-					<div class="flex flex-col justify-center items-center h-full">
-						<img src="/assets/img/logo-compdes-white.png" alt="Compdes white" class="w-12 mb-6"/>
-						<h1 class="text-[20px]! text-white">XVII CONGRESO DE COMPUTACIÓN PARA EL DESARROLLO</h1>
-						<div class="flex gap-6">
-							<h2 class="text-[120px]! text-white">COMPDES</h2>
-							<h3 class="text-[120px]! text-[#B54745]">2025</h3>
-						</div>
-						<p class="text-xl! text-white">Quetzaltenango, Guatemala del 16 al 18 de julio de 2025</p>
-						<a href="#informacion" class="bg-[#B54745] border-1 border-[#B54745] text-white px-10 py-2 mt-4 rounded-sm hover:bg-transparent">Conoce más</a>
-					</div>
-				</div>
-			</div>
-		</section>
-	  
-		<main id="main">
-			<!--- ========================================================================================= -->
-			<section id="informacion" class="commonWhiteSection">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 content" data-aos="fade-down">
-							<h2>Información</h2>
-							<p class="font22">
-								El <strong>XVIII Congreso Iberoamericano de Computación para el Desarrollo - COMPDES2025 -</strong> se desarrollará del 16 al 18 de julio de 2025, organizado por el Centro Universitario de Occidente -CUNOC- de la Universidad de San Carlos de Guatemala, con la colaboración de la Universidad de Alcalá (España), en el marco de actividades de la RED COMPDES.
-					</br></br>La sede del evento será la ciudad de Quetzaltenango (Guatemala).
-							</p>
+  <body>
+    <header id="header" class="fixed top-0 w-full">
+      <div class="container flex items-center justify-between pl-18">
+        <h1 class="logo">
+          <a href="index.html" class="!text-[20px]">COMPDES 2025</a>
+        </h1>
+        <nav id="" class="navbar">
+          <ul>
+            <!--         <li><a class="nav-link scrollto active" href="#hero">.</a></li> --->
+            <li>
+              <a class="nav-link scrollto" href="#informacion">Información</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="#cronograma">Cronograma</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="#organizacion">Organización</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="#contacto">Contacto y Sede</a>
+            </li>
+            <li>
+              <a
+                class="nav-link scrollto"
+                target="_blank"
+                href="https://www.facebook.com/COMPDES"
+                ><img src="img/facebook.png" style="width: 20px;" />
+              </a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
 
-							<p class="font22">
-								La <strong><a target="_blank" href="https://www.compdes.org/">Red COMPDES</a></strong> está formada por diez Universidades públicas de Costa Rica, El Salvador, España, Guatemala, Honduras y Nicaragua y tiene como finalidad promover el intercambio de conocimiento entre estudiantes, profesionales, docentes e investigadores de Iberoamérica que trabajan en impulsar el desarrollo de los sectores de sus países utilizando las tecnologías de información y comunicación. Los congresos COMPDES son la actividad más notoria y se celebran anualmente en una de las Universidades de la Red. (<a target="_blank" href="https://www.compdes.org/"> <font color=blue><i>web de Red Compdes</i> </font></a>)
-							</p>
-				<div class="row">
-					<img src="img/LogoRedCompdes.png" alt="Red Compdes" width="1028" border="0">
-				</div>
-				<br/><center>
-				<h2>Más Información a Partir de Marzo 2025</h2>
-				</center>
-				</div>
-					</div>
-				</div>
-			</section>
-		  
-	  <!--- ========================================================================================= -->
-		  <section id="cronograma" class="commonGreenSection commonGreenSection-bg">
-			<div class="container" data-aos="fade-up">
-	  
-			  <div class="section-title">
-				<h2 class="fontWhite">Fechas importantes</h2>
-			  </div>
-	  
-			  <div class="row gy-4">
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-				  <div class="icon-box iconbox-blue">
-					
-					<h4>Recepción de trabajos</h4>
-					<p>Período de recepción de trabajos: <br/>
-					 <strong style="text-decoration: line-through;">hasta el 15 de junio 2024</strong> <br/>
-				   <em style="text-decoration: underline;">Se extiende hasta el 30 de Junio de 2024</em>
-					</p>
-				  </div>
-				</div>
-	  
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-				  <div class="icon-box iconbox-orange ">
-					
-					<h4>Aceptación de trabajos</h4>
-					<p>Período de aceptación de trabajos:<br/> <strong>progresiva hasta el 30 de junio</strong>.</p>
-				  </div>
-				</div>
-	  
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
-				  <div class="icon-box iconbox-pink">
-					
-					<h4>Envío versión final</h4>
-					<p>Envío de versión final de trabajos:<br/> <strong>hasta el 10 de Julio</strong>.</p>
-				  </div>
-				</div>
-	  
-				<div class="col-lg-12 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-				  <div class="icon-box iconbox-pink">
-					<h4>Celebración del Congreso</h4>
-					<p>El Congreso COMPDES2024 se llevará a cabo los días <strong>17, 18 y 19 de julio de 2024</strong>.</p>
-				  </div>
-				</div>
-	  
-	  
-	  
-				<div class="col-lg-12 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-				  <div class="icon-box iconbox-pink">
-					<h4>Publicación del Libro del Congreso</h4>
-					<p>Está prevista la publicación, por la Editorial Universidad de Alcalá (España), de un Libro con una selección de los trabajos presentados durante el congreso.<br/>
-					<strong>Septiembre de 2024</strong>.</p>
-				  </div>
-				</div>
-	  
-	  
-	  
-	  
-	  
-			  </div>
-	  
-			</div>
-		  </section>
-	  <!--- ========================================================================================= -->
-		  <section id="organizacion" class="commonWhiteSection">
-			<div class="container" data-aos="fade-up">        
-				<h2>Organización del Congreso</h2>
-			  <br/>
-			  <div class="row gy-4">
-				<div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-				  <div class="icon-box iconbox-teal">
-					<h4>Comité Científico</h4>
-					<ul style="text-align:left">
-	  <li>Meziat Luna, Daniel. <i>Universidad de Alcalá (España) – Presidente </i></li>
-	  <li>Aguilera Centeno, Narciso Javier. <i>Universidad Nacional de Ingeniería (Nicaragua)</i></li>
-	  <li>Alarcos Alcázar, Bernardo. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Arco, José. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Barchino, Roberto. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Bengochea, Luis. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Cabrera-Loayza, Ma. Carmen. <i>Universidad Técnica Particular de Loja (Ecuador)</i></li>
-	  <li>Calero, Coral. <i>Universidad de Castilla-La Mancha (España)</i></li>
-	  <li>Carballo Ruiz, Elmer Arturo. <i>Universidad de El Salvador</i></li>
-	  <li>De la Fuente, Pablo. <i>Universidad de Valladolid (España)</i></li>
-	  <li>Díaz, Bladimir. <i>Universidad de El Salvador</i></li>
-	  <li>Domínguez, Mª José. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Fernández del Castillo, José Raúl. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Forero Paez, Nelson Augusto. <i>Kryptogenesis - IT Security (Colombia)</i></li>
-	  <li>García Astete, Margarita. <i>Universidad de La Serena (Chile)</i></li>
-	  <li>García Herraiz, Antonio. <i>Universidad de Alcalá (España)</i></li>
-	  <li>García Peñalvo, Francisco José. <i>Universidad de Salamanca (España)</i></li>
-	  <li>Garita, Cesar. <i>Instituto Tecnológico de Costa Rica</i></li>
-	  <li>González Enríquez, José. <i>Universidad de Sevilla (España)</i></li>
-	  <li>Guasch, Daniel. <i>Universitat Politècnica de Catalunya (España)</i></li>
-	  <li>Gutiérrez, José María. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Gutiérrez-De-Mesa, José-Antonio. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Hernández Ramírez, Oscar Guillermo. <i>Univ. Nacional Autónoma de Honduras</i></li>
-	  <li>Jaillier, Erika. <i>Universidad Pontificia Bolivariana (Colombia)</i></li>
-	  <li>Llanos, Diego R. <i>Universidad de Valladolid (España)</i></li>
-	  <li>López, Alicia Beatriz. <i>Universidad Nacional de Mar del Plata (Argentina)</i></li>
-	  <li>López, José Mario. <i>Universidad Nacional Autónoma de Honduras</i></li>
-	  <li>López Poveda, Anayanci. <i>Universidad Nacional de Ingeniería (Nicaragua)</i></li>
-	  <li>López Quiroa, Christian Alberto. <i>Universidad de San Carlos (Guatemala)</i></li>
-	  <li>López Villegas, Óscar. <i>Instituto Tecnológico de Costa Rica</i></li>
-	  <li>McKensy Sambola, Dexon. <i>Bluefields Indian & Caribbean University (Nicaragua)</i></li>
-	  <li>Mejía, Guillermo. <i>Universidad de El Salvador</i></li>
-	  <li>Munguía-Mena, Marco. <i>Universidad Nacional de Ingeniería (Nicaragua)</i></li>
-	  <li>Oyarzo, Jaime. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Palma Mendoza, Raúl José. <i>Universidad Nacional Autónoma de Honduras</i></li>
-	  <li>Población, Óscar. <i> Universidad de Alcalá (España)</i></li>
-	  <li>Portillo, Julio. <i>Universidad de El Salvador</i></li>
-	  <li>Prieto, Manuel. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Restrepo Bustamante, Félix Andrés. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Romero-Peláez, Audrey. <i>Universidad Técnica Particular de Loja (Ecuador)</i></li>
-	  <li>Sánchez Prieto, Sebastián. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Vegas, Jesús. <i>Universidad de Valladolid (España)</i></li>
-	  <li>Velasco, Juan Ramón. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Vicente Rodríguez, Antonio J. de. <i>Universidad de Alcalá (España)</i></li>
-		</ul>
-		 </div>
-	   </div>
-	  
-	   <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-		 <div class="icon-box iconbox-teal">
-		  <h4>Comité de Organización</h4>
-		  <ul style="text-align:left">
-	  <li>Beyker Obando. <i>Universidad de Costa Rica - Presidente</i></li>
-	  <li>Rafael Martínez. <i>Universidad de Costa Rica</i></li>
-	  <li>Luis Eduardo Amaya. <i>Universidad de Costa Rica</i></li>
-	  <li>Óscar López. <i>Tecnológico de Costa Rica</i></li>
-	  <li>Daniel Meziat. <i>Universidad de Alcalá (España)</i></li>
-	  <li>Luis Bengochea. <i>Universidad de Alcalá (España)</i></li>
-		  </ul>
-		 </div>
-	  <br/>			
-		  <div class="icon-box iconbox-teal">
-		   <h4>La Universidad de Costa Rica</h4>
-		  La <u>Universidad de Costa Rica</u> Sede Guanacaste (https://www.ucr.ac.cr/), es una institución de educación superior abanderada de la enseñanza humanista y de la excelencia. Desde su constitución en 1940 esta Institución goza de Autonomía Universitaria y en el 2001 fue declarada Institución Benemérita de la Educación y la Cultura Costarricense. La Universidad de Costa Rica aspira a ser una universidad pública referente en la educación superior internacional, inclusiva, innovadora, proactiva, sostenible y solidaria. Asimismo, se propone fortalecer la excelencia académica, la generación y la difusión del conocimiento, el diálogo de saberes con vocación transformadora, la internacionalización y la vinculación Universidad-Sociedad-Estado, siendo responsable y transparente en el uso de los recursos, a fin de promover la movilidad social ascendente, la búsqueda del bien común y el desarrollo territorial y nacional.
-		  </div>
-		  
-	  <br/>		
-		  <div class="icon-box iconbox-teal">
-		   <h4>Representantes de la Red Compdes</h4>	
-		   <li>Óscar López. <i>Tecnológico de Costa Rica</i> (Presidente)</li>
-		   <li>Daniel Meziat. <i>Universidad de Alcalá (España)</i> (Presidente de Honor)</li>
-		   <br/>
-		   <li>Alarcón, Francisco. <i>Universidad de El Salvador</i></li>
-	  <li>Amaya, Luis Eduardo. <i>Universidad de Costa Rica</i></li>
-	  <li>Bárcenas Lezama, Miguel Ángel. <i>UNAN – León (Nicaragua)</i></li>
-	  <li>Bengochea Martínez, Luis. <i>UAH (España)</i></li>
-	  <li>Carol Hernández, Víctor. <i>CUNOC-USAC (Guatemala)</i></li>
-	  <li>Contreras Mercado, Arnoldo José. <i>UNAN-León (Nicaragua)</i></li>
-	  <li>Chávez Mairena, Luis Eduardo. <i>UNI (Nicaragua)</i></li>
-	  <li>Chicas, Rudy. <i>Universidad de El Salvador</i></li>
-	  <li>Esquivel Vega, Gaudy. <i>Tecnológico de Costa Rica</i></li>
-	  <li>Gross, Eduardo. <i>UNAH (Honduras)</i></li>
-	  <li>Juárez, Nelson. <i>UNI (Nicaragua)</i></li>
-	  <li>López, Christian. <i>CUNOC-USAC (Guatemala)</i></li>
-	  <li>López, Roy. <i>BICU (Nicaragua)</i></li>
-	  <li>López Poveda, Anayanci. <i>UNI (Nicaragua)</i></li>
-	  <li>Mejía Quiroz, Álvaro. <i>UNAN-Managua (Nicaragua)</i></li>
-	  <li>Palma Mendoza, Raúl. <i>UNAH (Honduras)</i></li>
-	  <li>Portillo, Julio. <i>Universidad de El Salvador</i></li>
-	  <li>Sambola, Dexon-Mckensy. <i>BICU (Nicaragua)</i></li>
-	  <li>Sánchez, José María. <i>Universidad de El Salvador</i></li>
-	  <li>Sierra Pac, Oliver. <i>CUNOC-USAC (Guatemala)</i></li>
-	  <li>Vásquez, Rodrigo. <i>Universidad de El Salvador</i></li>
-	  
-		 </div>	
-		  
-		  
-		  
-		 </div>	
-		</div>
-	   </div>
-	   </section>
-	  <!--- ========================================================================================= -->
-		  <section id="contacto" class="commonGreenSection commonGreenSection-bg">
-			<div class="container" data-aos="fade-up">
-			  <div class="row gy-4">
-				<div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-				  <div class="fontWhite">
-				  <br>
-					  <h2><font color="#A9F5F2">Contacto</font></h2>
-	  
-					  <h3>Organización Local (Liberia - Costa Rica)</h3>
-						  <ul>
-						  <li>Programa</li> 
-						  <li>Sede</li> 
-						  <li>Alojamiento</li> 
-						  <li>Inscripciones</li>
-						  <li>Talleres</li>
-						  <li>Actividades culturales</li>
-						  </ul>
-						  Universidad de Costa Rica (Sede de Guanacaste)<br/> 
-						  E-mail: <a href="mailto:BEYKER.OBANDO@ucr.ac.cr"><font color="#A9F5F2">BEYKER.OBANDO@ucr.ac.cr</font></a>
-			  <br/><br/>
-					  <h3>Aspectos científicos y académicos</h3>
-						  <ul><li>Revisión de trabajos</li>
-						  <li>Comité científico</li>
-						  <li>Publicación del libro de actas</li>
-						  </ul>
-						  Universidad de Alcalá. (España)
-						  E-mail: <a href="mailto:compdes@uah.es"><font color="#A9F5F2">compdes@uah.es</font></a>
-			  <br/><br/>
-					  <h3>Alojamiento</h3>
-				  Puede descargar <a target="_blank" href="docs/COMPDES2024-Alojamiento.pdf"> aquí </a> una guía de hoteles para el congreso COMPDES2024.			
-					
-					
-	  
-			  <br/><br/>
-				
-					  <h3>Dirección</h3>		
-					Universidad de Costa Rica (Sede de Guanacaste), 21, Provincia de Guanacaste, Liberia, Costa Rica.
-	  
-				  
-				  <div class="row">
-					<div class="col-lg-12 ">
-					
-					
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7843.001500138497!2d-85.46462753901626!3d10.61815185483429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f757d1636b1ee43%3A0x5d04110e14abc710!2sUniversidad%20de%20Costa%20Rica%20(Sede%20de%20Guanacaste)!5e0!3m2!1ses!2ses!4v1708084829987!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
-				  </div>	
-	  
-	  
-				  
-							  </div>	
-				</div> <!--- class="col-lg-6 col-md-6" --->
-	  <!--- =================  Imágenes a la derecha de los contactos y el mapa ============================ --->
-				<div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-				  <div class="fontWhite">
-					  <br/><br/><br/>
-					  <img src="img/DSC_4738.jpg" class="img-fluid animated" alt="Universidad de Costa Rica">
-				  </div>
-				  
-				  <div class="fontWhite">
-					  <br/>
-					  <img src="img/DSC_4497.jpg" class="img-fluid animated" alt="Universidad de Costa Rica">
-				  </div>
-				  
-				  <div class="fontWhite">
-					  <br/><br/><br/><br/>
-					  <img src="img/compdes-ucr.png" class="img-fluid animated" alt="Universidad de Costa Rica" width="200" height="200" style="border:0;">
-					  <img src="img/LogoCompdes2024.png" class="img-fluid animated" alt="Universidad de Costa Rica" width="350" height="350" style="border:0;">
-				  </div>
-	  
-				</div> <!--- class="col-lg-6 col-md-6" --->		
-			  </div> <!--- row gy-4 --->
-			</div> <!--- container -->
-		  </section>
-	  <!--- ========================================================================================= -->
-		</main>
-	 <!--- ========================================================================================= -->
-	 <footer id="footer">
-    <div class="container">
-      <div class="subfoot-wrap d-md-flex py-4">
-        <div class="me-md-auto text-center text-md-start">
-          <div class="subfoot">
-            COMPDES2025 - <strong><span>CUNOC</span></strong> - Centro Universitario de Occidente. Universidad de San Carlos de Guatemala.
+    <section
+      class="bg-brand-green py-34"
+      style="background: linear-gradient(180deg, rgba(17,78,80,1) 52%, rgba(7,43,45,1) 100%)"
+    >
+      <div class="container-fluid h-full" data-aos="fade-up">
+        <div class="row justify-content-center h-full">
+          <div class="flex flex-col justify-center items-center h-full">
+            <div class="flex flex-col items-center mb-12 gap-3">
+              <img
+                src="/assets/img/logo-compdes-white.png"
+                alt="Compdes white"
+                class="w-12"
+              />
+            </div>
+            <h1 class="text-[20px]! text-white">
+              XVII CONGRESO DE COMPUTACIÓN PARA EL DESARROLLO
+            </h1>
+            <div class="flex gap-6 font-semibold">
+              <h2 class="text-[120px]! text-white">COMPDES</h2>
+              <h3 class="text-[120px]! text-brand-red">2025</h3>
+            </div>
+            <h6 class="text-xl! text-white">
+              Quetzaltenango, Guatemala del 16 al 18 de julio de 2025
+            </h6>
+            <a
+              href="#informacion"
+              class="border-2 border-brand-red text-white px-10 py-2 mt-12! uppercase font-semibold font-poppins bg-brand-red transition hover:bg-transparent active:bg-brand-red/80"
+              >Conoce más</a
+            >
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-	  <!--- ========================================================================================= -->
-		<script src="/assets/js/aos.js" is:inline></script>
-		<script src="/assets/js/bootstrap.bundle.min.js" is:inline></script>
-		<script src="/assets/js/isotope.pkgd.min.js" is:inline></script>
-	  
-		<script src="/assets/js/main.js" is:inline></script>
-		<script src="/assets/js/certificates.js" is:inline></script>
-	  </body>
+    </section>
+
+    <main id="main">
+      <!--- ========================================================================================= -->
+      <section id="informacion" class=" py-12">
+        <div class="">
+          <div
+            class="prose prose-stone max-w-none text-xl prose-p:leading-relaxed prose-a:text-brand-red prose-a:no-underline prose-a:hover:text-brand-red/80 prose-a:transition prose-a:font-bold"
+            data-aos="fade-down"
+          >
+            <section id="" class="max-lg:px-8 lg:max-w-4xl mx-auto py-12">
+              <div class="">
+                <div
+                  class="prose prose-stone max-w-none text-xl prose-p:leading-relaxed prose-a:text-brand-red prose-a:no-underline prose-a:hover:text-brand-red/80 prose-a:transition prose-a:font-bold"
+                  data-aos="fade-down"
+                >
+                  <h2 class="text-3xl text-brand-red text-center">
+                    Información
+                  </h2>
+                  <p class="">
+                    El <strong
+                      >XVIII Congreso Iberoamericano de Computación para el
+                      Desarrollo - COMPDES2025 -</strong
+                    > se desarrollará del 16 al 18 de julio de 2025, organizado por
+                    el Centro Universitario de Occidente <span class="italic"
+                      >-CUNOC-</span
+                    > de la Universidad de San Carlos de Guatemala, con la colaboración
+                    de la Universidad de Alcalá (España), en el marco de actividades
+                    de la RED COMPDES.
+                  </p>
+                  <p class="">
+                    <strong>
+                      La sede del evento será la ciudad de Quetzaltenango,
+                      Guatemala.
+                    </strong>
+                  </p>
+                  <p class="">
+                    La <strong class=""
+                      ><a target="_blank" href="https://www.compdes.org/"
+                        >Red COMPDES</a
+                      ></strong
+                    > está formada por diez Universidades públicas de Costa Rica,
+                    El Salvador, España, Guatemala, Honduras y Nicaragua y tiene
+                    como finalidad promover el intercambio de conocimiento entre
+                    estudiantes, profesionales, docentes e investigadores de Iberoamérica
+                    que trabajan en impulsar el desarrollo de los sectores de sus
+                    países utilizando las tecnologías de información y comunicación.
+                    Los congresos COMPDES son la actividad más notoria y se celebran
+                    anualmente en una de las Universidades de la Red. (<a
+                      target="_blank"
+                      href="https://www.compdes.org/">web de Red COMPDES</a
+                    >)
+                  </p>
+                </div>
+
+                <div class="">
+                  <img
+                    src="img/LogoRedCompdes.png"
+                    alt="Red Compdes"
+                    width="1028"
+                  />
+                </div>
+                <h2
+                  class="text-center font-semibold text-brand-red border-t-2 border-b-2 p-4 text-lg"
+                >
+                  Más Información a Partir de Abril de 2025
+                </h2>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!--- ========================================================================================= -->
+        <div
+          class="w-full text-center bg-brand-green py-12 text-white font-bold text-2xl"
+        >
+          <h2 class="">Fechas importantes</h2>
+        </div>
+        <section
+          id="cronograma"
+          class="commonGreenSection commonGreenSection-bg w-full!"
+        >
+          <div class="w-full!" data-aos="fade-up">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box iconbox-blue">
+                <h4>Recepción de trabajos</h4>
+                <p>
+                  Período de recepción de trabajos: <br />
+                  <strong style="text-decoration: line-through;"
+                    >hasta el 15 de junio 2024</strong
+                  >
+                  <br />
+                  <em style="text-decoration: underline;"
+                    >Se extiende hasta el 30 de Junio de 2024</em
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box iconbox-orange">
+                <h4>Aceptación de trabajos</h4>
+                <p>
+                  Período de aceptación de trabajos:<br />
+                  <strong>progresiva hasta el 30 de junio</strong>.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box iconbox-pink">
+                <h4>Envío versión final</h4>
+                <p>
+                  Envío de versión final de trabajos:<br />
+                  <strong>hasta el 10 de Julio</strong>.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-12 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box iconbox-pink">
+                <h4>Celebración del Congreso</h4>
+                <p>
+                  El Congreso COMPDES2024 se llevará a cabo los días <strong
+                    >17, 18 y 19 de julio de 2024</strong
+                  >.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-12 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box iconbox-pink">
+                <h4>Publicación del Libro del Congreso</h4>
+                <p>
+                  Está prevista la publicación, por la Editorial Universidad de
+                  Alcalá (España), de un Libro con una selección de los trabajos
+                  presentados durante el congreso.<br />
+                  <strong>Septiembre de 2024</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--- ========================================================================================= -->
+        <section id="organizacion" class="commonWhiteSection">
+          <div class="container" data-aos="fade-up">
+            <h2>Organización del Congreso</h2>
+            <br />
+            <div class="row gy-4">
+              <div
+                class="col-lg-6 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <div class="icon-box iconbox-teal">
+                  <h4>Comité Científico</h4>
+                  <ul style="text-align:left">
+                    <li>
+                      Meziat Luna, Daniel. <i
+                        >Universidad de Alcalá (España) – Presidente
+                      </i>
+                    </li>
+                    <li>
+                      Aguilera Centeno, Narciso Javier. <i
+                        >Universidad Nacional de Ingeniería (Nicaragua)</i
+                      >
+                    </li>
+                    <li>
+                      Alarcos Alcázar, Bernardo. <i
+                        >Universidad de Alcalá (España)</i
+                      >
+                    </li>
+                    <li>Arco, José. <i>Universidad de Alcalá (España)</i></li>
+                    <li>
+                      Barchino, Roberto. <i>Universidad de Alcalá (España)</i>
+                    </li>
+                    <li>
+                      Bengochea, Luis. <i>Universidad de Alcalá (España)</i>
+                    </li>
+                    <li>
+                      Cabrera-Loayza, Ma. Carmen. <i
+                        >Universidad Técnica Particular de Loja (Ecuador)</i
+                      >
+                    </li>
+                    <li>
+                      Calero, Coral. <i
+                        >Universidad de Castilla-La Mancha (España)</i
+                      >
+                    </li>
+                    <li>
+                      Carballo Ruiz, Elmer Arturo. <i
+                        >Universidad de El Salvador</i
+                      >
+                    </li>
+                    <li>
+                      De la Fuente, Pablo. <i
+                        >Universidad de Valladolid (España)</i
+                      >
+                    </li>
+                    <li>Díaz, Bladimir. <i>Universidad de El Salvador</i></li>
+                    <li>
+                      Domínguez, Mª José. <i>Universidad de Alcalá (España)</i>
+                    </li>
+                    <li>
+                      Fernández del Castillo, José Raúl. <i
+                        >Universidad de Alcalá (España)</i
+                      >
+                    </li>
+                    <li>
+                      Forero Paez, Nelson Augusto. <i
+                        >Kryptogenesis - IT Security (Colombia)</i
+                      >
+                    </li>
+                    <li>
+                      García Astete, Margarita. <i
+                        >Universidad de La Serena (Chile)</i
+                      >
+                    </li>
+                    <li>
+                      García Herraiz, Antonio. <i
+                        >Universidad de Alcalá (España)</i
+                      >
+                    </li>
+                    <li>
+                      García Peñalvo, Francisco José. <i
+                        >Universidad de Salamanca (España)</i
+                      >
+                    </li>
+                    <li>
+                      Garita, Cesar. <i>Instituto Tecnológico de Costa Rica</i>
+                    </li>
+                    <li>
+                      González Enríquez, José. <i
+                        >Universidad de Sevilla (España)</i
+                      >
+                    </li>
+                    <li>
+                      Guasch, Daniel. <i
+                        >Universitat Politècnica de Catalunya (España)</i
+                      >
+                    </li>
+                    <li>
+                      Gutiérrez, José María. <i
+                        >Universidad de Alcalá (España)</i
+                      >
+                    </li>
+                    <li>
+                      Gutiérrez-De-Mesa, José-Antonio. <i
+                        >Universidad de Alcalá (España)</i
+                      >
+                    </li>
+                    <li>
+                      Hernández Ramírez, Oscar Guillermo. <i
+                        >Univ. Nacional Autónoma de Honduras</i
+                      >
+                    </li>
+                    <li>
+                      Jaillier, Erika. <i
+                        >Universidad Pontificia Bolivariana (Colombia)</i
+                      >
+                    </li>
+                    <li>
+                      Llanos, Diego R. <i>Universidad de Valladolid (España)</i>
+                    </li>
+                    <li>
+                      López, Alicia Beatriz. <i
+                        >Universidad Nacional de Mar del Plata (Argentina)</i
+                      >
+                    </li>
+                    <li>
+                      López, José Mario. <i
+                        >Universidad Nacional Autónoma de Honduras</i
+                      >
+                    </li>
+                    <li>
+                      López Poveda, Anayanci. <i
+                        >Universidad Nacional de Ingeniería (Nicaragua)</i
+                      >
+                    </li>
+                    <li>
+                      López Quiroa, Christian Alberto. <i
+                        >Universidad de San Carlos (Guatemala)</i
+                      >
+                    </li>
+                    <li>
+                      López Villegas, Óscar. <i
+                        >Instituto Tecnológico de Costa Rica</i
+                      >
+                    </li>
+                    <li>
+                      McKensy Sambola, Dexon. <i
+                        >Bluefields Indian & Caribbean University (Nicaragua)</i
+                      >
+                    </li>
+                    <li>Mejía, Guillermo. <i>Universidad de El Salvador</i></li>
+                    <li>
+                      Munguía-Mena, Marco. <i
+                        >Universidad Nacional de Ingeniería (Nicaragua)</i
+                      >
+                    </li>
+                    <li>
+                      Oyarzo, Jaime. <i>Universidad de Alcalá (España)</i>
+                    </li>
+                    <li>
+                      Palma Mendoza, Raúl José. <i
+                        >Universidad Nacional Autónoma de Honduras</i
+                      >
+                    </li>
+                    <li>
+                      Población, Óscar. <i> Universidad de Alcalá (España)</i>
+                    </li>
+                    <li>Portillo, Julio. <i>Universidad de El Salvador</i></li>
+                    <li>
+                      Prieto, Manuel. <i>Universidad de Alcalá (España)</i>
+                    </li>
+                    <li>
+                      Restrepo Bustamante, Félix Andrés. <i
+                        >Universidad de Alcalá (España)</i
+                      >
+                    </li>
+                    <li>
+                      Romero-Peláez, Audrey. <i
+                        >Universidad Técnica Particular de Loja (Ecuador)</i
+                      >
+                    </li>
+                    <li>
+                      Sánchez Prieto, Sebastián. <i
+                        >Universidad de Alcalá (España)</i
+                      >
+                    </li>
+                    <li>
+                      Vegas, Jesús. <i>Universidad de Valladolid (España)</i>
+                    </li>
+                    <li>
+                      Velasco, Juan Ramón. <i>Universidad de Alcalá (España)</i>
+                    </li>
+                    <li>
+                      Vicente Rodríguez, Antonio J. de. <i
+                        >Universidad de Alcalá (España)</i
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <div class="icon-box iconbox-teal">
+                  <h4>Comité de Organización</h4>
+                  <ul style="text-align:left">
+                    <li>
+                      Beyker Obando. <i
+                        >Universidad de Costa Rica - Presidente</i
+                      >
+                    </li>
+                    <li>Rafael Martínez. <i>Universidad de Costa Rica</i></li>
+                    <li>
+                      Luis Eduardo Amaya. <i>Universidad de Costa Rica</i>
+                    </li>
+                    <li>Óscar López. <i>Tecnológico de Costa Rica</i></li>
+                    <li>
+                      Daniel Meziat. <i>Universidad de Alcalá (España)</i>
+                    </li>
+                    <li>
+                      Luis Bengochea. <i>Universidad de Alcalá (España)</i>
+                    </li>
+                  </ul>
+                </div>
+                <br />
+                <div class="icon-box iconbox-teal">
+                  <h4>La Universidad de Costa Rica</h4>
+                  La <u>Universidad de Costa Rica</u> Sede Guanacaste (https://www.ucr.ac.cr/),
+                  es una institución de educación superior abanderada de la enseñanza
+                  humanista y de la excelencia. Desde su constitución en 1940 esta
+                  Institución goza de Autonomía Universitaria y en el 2001 fue declarada
+                  Institución Benemérita de la Educación y la Cultura Costarricense.
+                  La Universidad de Costa Rica aspira a ser una universidad pública
+                  referente en la educación superior internacional, inclusiva, innovadora,
+                  proactiva, sostenible y solidaria. Asimismo, se propone fortalecer
+                  la excelencia académica, la generación y la difusión del conocimiento,
+                  el diálogo de saberes con vocación transformadora, la internacionalización
+                  y la vinculación Universidad-Sociedad-Estado, siendo responsable
+                  y transparente en el uso de los recursos, a fin de promover la
+                  movilidad social ascendente, la búsqueda del bien común y el desarrollo
+                  territorial y nacional.
+                </div>
+
+                <br />
+                <div class="icon-box iconbox-teal">
+                  <h4>Representantes de la Red Compdes</h4>
+                  <li>
+                    Óscar López. <i>Tecnológico de Costa Rica</i> (Presidente)
+                  </li>
+                  <li>
+                    Daniel Meziat. <i>Universidad de Alcalá (España)</i> (Presidente
+                    de Honor)
+                  </li>
+                  <br />
+                  <li>Alarcón, Francisco. <i>Universidad de El Salvador</i></li>
+                  <li>Amaya, Luis Eduardo. <i>Universidad de Costa Rica</i></li>
+                  <li>
+                    Bárcenas Lezama, Miguel Ángel. <i>UNAN – León (Nicaragua)</i
+                    >
+                  </li>
+                  <li>Bengochea Martínez, Luis. <i>UAH (España)</i></li>
+                  <li>
+                    Carol Hernández, Víctor. <i>CUNOC-USAC (Guatemala)</i>
+                  </li>
+                  <li>
+                    Contreras Mercado, Arnoldo José. <i>UNAN-León (Nicaragua)</i
+                    >
+                  </li>
+                  <li>Chávez Mairena, Luis Eduardo. <i>UNI (Nicaragua)</i></li>
+                  <li>Chicas, Rudy. <i>Universidad de El Salvador</i></li>
+                  <li>
+                    Esquivel Vega, Gaudy. <i>Tecnológico de Costa Rica</i>
+                  </li>
+                  <li>Gross, Eduardo. <i>UNAH (Honduras)</i></li>
+                  <li>Juárez, Nelson. <i>UNI (Nicaragua)</i></li>
+                  <li>López, Christian. <i>CUNOC-USAC (Guatemala)</i></li>
+                  <li>López, Roy. <i>BICU (Nicaragua)</i></li>
+                  <li>López Poveda, Anayanci. <i>UNI (Nicaragua)</i></li>
+                  <li>Mejía Quiroz, Álvaro. <i>UNAN-Managua (Nicaragua)</i></li>
+                  <li>Palma Mendoza, Raúl. <i>UNAH (Honduras)</i></li>
+                  <li>Portillo, Julio. <i>Universidad de El Salvador</i></li>
+                  <li>Sambola, Dexon-Mckensy. <i>BICU (Nicaragua)</i></li>
+                  <li>
+                    Sánchez, José María. <i>Universidad de El Salvador</i>
+                  </li>
+                  <li>Sierra Pac, Oliver. <i>CUNOC-USAC (Guatemala)</i></li>
+                  <li>Vásquez, Rodrigo. <i>Universidad de El Salvador</i></li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--- ========================================================================================= -->
+        <section id="contacto" class="commonGreenSection commonGreenSection-bg">
+          <div class="container" data-aos="fade-up">
+            <div class="row gy-4">
+              <div
+                class="col-lg-6 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <div class="fontWhite">
+                  <br />
+                  <h2><font color="#A9F5F2">Contacto</font></h2>
+
+                  <h3>Organización Local (Liberia - Costa Rica)</h3>
+                  <ul>
+                    <li>Programa</li>
+                    <li>Sede</li>
+                    <li>Alojamiento</li>
+                    <li>Inscripciones</li>
+                    <li>Talleres</li>
+                    <li>Actividades culturales</li>
+                  </ul>
+                  Universidad de Costa Rica (Sede de Guanacaste)<br />
+                  E-mail: <a href="mailto:BEYKER.OBANDO@ucr.ac.cr"
+                    ><font color="#A9F5F2">BEYKER.OBANDO@ucr.ac.cr</font></a
+                  >
+                  <br /><br />
+                  <h3>Aspectos científicos y académicos</h3>
+                  <ul>
+                    <li>Revisión de trabajos</li>
+                    <li>Comité científico</li>
+                    <li>Publicación del libro de actas</li>
+                  </ul>
+                  Universidad de Alcalá. (España) E-mail: <a
+                    href="mailto:compdes@uah.es"
+                    ><font color="#A9F5F2">compdes@uah.es</font></a
+                  >
+                  <br /><br />
+                  <h3>Alojamiento</h3>
+                  Puede descargar <a
+                    target="_blank"
+                    href="docs/COMPDES2024-Alojamiento.pdf"
+                  >
+                    aquí
+                  </a> una guía de hoteles para el congreso COMPDES2024.
+
+                  <br /><br />
+
+                  <h3>Dirección</h3>
+                  Universidad de Costa Rica (Sede de Guanacaste), 21, Provincia de
+                  Guanacaste, Liberia, Costa Rica.
+
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7843.001500138497!2d-85.46462753901626!3d10.61815185483429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f757d1636b1ee43%3A0x5d04110e14abc710!2sUniversidad%20de%20Costa%20Rica%20(Sede%20de%20Guanacaste)!5e0!3m2!1ses!2ses!4v1708084829987!5m2!1ses!2ses"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--- class="col-lg-6 col-md-6" --->
+              <!--- =================  Imágenes a la derecha de los contactos y el mapa ============================ --->
+              <div
+                class="col-lg-6 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <div class="fontWhite">
+                  <br /><br /><br />
+                  <img
+                    src="img/DSC_4738.jpg"
+                    class="img-fluid animated"
+                    alt="Universidad de Costa Rica"
+                  />
+                </div>
+
+                <div class="fontWhite">
+                  <br />
+                  <img
+                    src="img/DSC_4497.jpg"
+                    class="img-fluid animated"
+                    alt="Universidad de Costa Rica"
+                  />
+                </div>
+
+                <div class="fontWhite">
+                  <br /><br /><br /><br />
+                  <img
+                    src="img/compdes-ucr.png"
+                    class="img-fluid animated"
+                    alt="Universidad de Costa Rica"
+                    width="200"
+                    height="200"
+                    style="border:0;"
+                  />
+                  <img
+                    src="img/LogoCompdes2024.png"
+                    class="img-fluid animated"
+                    alt="Universidad de Costa Rica"
+                    width="350"
+                    height="350"
+                    style="border:0;"
+                  />
+                </div>
+              </div>
+              <!--- class="col-lg-6 col-md-6" --->
+            </div>
+            <!--- row gy-4 --->
+          </div>
+          <!--- container -->
+        </section>
+        <!--- ========================================================================================= -->
+      </section>
+      <!--- ========================================================================================= -->
+      <footer id="footer">
+        <div class="container">
+          <div class="subfoot-wrap d-md-flex py-4">
+            <div class="me-md-auto text-center text-md-start">
+              <div class="subfoot">
+                COMPDES2025 - <strong><span>CUNOC</span></strong> - Centro Universitario
+                de Occidente. Universidad de San Carlos de Guatemala.
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--- ========================================================================================= -->
+      <script src="/assets/js/aos.js" is:inline></script>
+      <script src="/assets/js/bootstrap.bundle.min.js" is:inline></script>
+      <script src="/assets/js/isotope.pkgd.min.js" is:inline></script>
+
+      <script src="/assets/js/main.js" is:inline></script>
+      <script src="/assets/js/certificates.js" is:inline></script>
+    </main>
+  </body>
 </Layout>

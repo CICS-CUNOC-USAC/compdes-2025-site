@@ -1,9 +1,5 @@
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
-}
 
-a {
+/* a {
   color: rgb(27.5, 40, 65.1);
   text-decoration: none;
 }
@@ -11,11 +7,9 @@ a {
 a:hover {
   color: #B54745;
   text-decoration: none;
-}
+} */
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
-}
+
 
 .btn-outline-compdes{
   color: #124e57;
@@ -481,8 +475,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 section {
-  padding: 100px 0;
-  overflow: hidden;
+  /* padding: 100px 0;
+  overflow: hidden; */
 }
 
 .section-bg {
