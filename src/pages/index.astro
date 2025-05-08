@@ -1,329 +1,712 @@
 ---
-import Welcome from "../components/Welcome.astro";
+import InfoIcon from "../components/icons/InfoIcon.astro";
+import CodeIcon from "../components/icons/CodeIcon.astro";
+import HeartIcon from "../components/icons/HeartIcon.astro";
+import LinkIcon from "../components/icons/LinkIcon.astro";
 import Layout from "../layouts/Layout.astro";
 ---
+
 <Layout>
-    <header id="header" class="fixed top-0 w-full pr-3! md:pr-0!">
-      <div class="container flex items-center justify-between pl-18">
-        <h1 class="logo">
-          <a href="index.html" class="!text-[20px]">COMPDES 2025</a>
-        </h1>
-        <nav id="" class="navbar">
-          <ul>
-            <li>
-              <a href="#informacion">Información</a>
-            </li>
-            <li>
-              <a href="#cronograma">Cronograma</a>
-            </li>
-            <li>
-              <a href="#organizacion">Organización</a>
-            </li>
-            <li>
-              <a href="#contacto">Contacto y Sede</a>
-            </li>
-            <li>
-              <a
-                class="nav-link scrollto"
-                target="_blank"
-                href="https://www.facebook.com/COMPDES"
-                ><img src="img/facebook.png" style="width: 20px;" />
-              </a>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-      </div>
-    </header>
-    <section
-      class="bg-[#124e57] px-4 h-[800px] bg-[url(https://compdes.org/compdes2025/assets/img/hero-background.png)]">
-      <div class="container-fluid h-full" data-aos="fade-up">
-        <div class="row justify-content-center h-full">
-          <div class="flex flex-col justify-center items-center h-full">
-            <img src="assets/img/logo-compdes-white.png" alt="Compdes white" class="w-12 mb-6" />
-            <h1 class="text-[18px]! md:text-[20px]! text-white text-center md:text-start">XVII CONGRESO DE
-              COMPUTACIÓN PARA EL DESARROLLO
-            </h1>
-            <div class="flex gap-2 md:gap-5">
-              <h2 class="text-[50px]! md:text-[120px]! text-white">COMPDES</h2>
-              <h3 class="text-[50px]! md:text-[120px]! text-[#B54745]">2025</h3>
-            </div>
-            <p class="text-xl! text-white  text-center md:text-star">Quetzaltenango, Guatemala del 23 al 25 de julio
-              de 2025
-            </p>
-            <a href="#informacion"
-              class="bg-[#B54745] border-1 border-[#B54745] text-white px-10 py-2 mt-4 rounded-sm hover:bg-transparent">Conoce
-            más</a>
+  <header id="header" class="fixed top-0 w-full pr-3! md:pr-0!">
+    <div class="container mx-auto flex items-center justify-between pl-18">
+      <h1 class="logo">
+        <a href="index.html" class="!text-[20px]">COMPDES 2025</a>
+      </h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li>
+            <a class="scrollto" href="#informacion">Información</a>
+          </li>
+          <li>
+            <a class="scrollto" href="#cronograma">Cronograma</a>
+          </li>
+          <li>
+            <a class="scrollto" href="#organizacion">Organización</a>
+          </li>
+          <li>
+            <a class="scrollto" href="#contacto">Contacto y Sede</a>
+          </li>
+          <li>
+            <a
+              class="nav-link scrollto"
+              target="_blank"
+              href="https://www.facebook.com/COMPDES"
+              ><img src="img/facebook.png" style="width: 20px;" />
+            </a>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <section
+    class="bg-[#124e57] px-4 h-[800px] bg-[url(https://compdes.org/compdes2025/assets/img/hero-background.png)]"
+  >
+    <div class="container-fluid h-full" data-aos="fade-up">
+      <div class="row justify-content-center h-full">
+        <div class="flex flex-col justify-center items-center h-full">
+          <img
+            src="assets/img/logo-compdes-white.png"
+            alt="Compdes white"
+            class="w-12 mb-6"
+          />
+          <h1
+            class="text-[18px]! md:text-[20px]! text-white text-center md:text-start"
+          >
+            XVII CONGRESO DE COMPUTACIÓN PARA EL DESARROLLO
+          </h1>
+          <div class="flex gap-2 md:gap-5">
+            <h2 class="text-[50px]! md:text-[120px]! text-white">COMPDES</h2>
+            <h3 class="text-[50px]! md:text-[120px]! text-[#B54745]">2025</h3>
           </div>
+          <p class="text-xl! text-white text-center md:text-star">
+            Quetzaltenango, Guatemala del 23 al 25 de julio de 2025
+          </p>
+          <a
+            href="#informacion"
+            class="bg-[#B54745] border-1 border-[#B54745] text-white px-10 py-2 mt-4 rounded-sm hover:bg-transparent"
+            >Conoce más</a
+          >
         </div>
       </div>
-    </section>
-    <main id="main">
-      <!--- ========================================================================================= -->
-      <section id="informacion" class="pt-12">
-        <div class="">
-          <div
-            class="prose prose-stone max-w-none text-xl prose-p:leading-relaxed prose-a:text-brand-red prose-a:no-underline prose-a:hover:text-brand-red/80 prose-a:transition prose-a:font-bold"
-            data-aos="fade-down"
-            >
-            <section id="" class="max-lg:px-8 lg:max-w-4xl mx-auto py-12">
-              <div class="">
-                <div
-                  class="prose prose-stone max-w-none text-xl prose-p:leading-relaxed prose-a:text-brand-red prose-a:no-underline prose-a:hover:text-brand-red/80 prose-a:transition prose-a:font-bold"
-                  data-aos="fade-down"
-                  >
-                  <h2 class="text-3xl text-brand-red text-center">
-                    Información
-                  </h2>
-                  <p class="">
-                    El <strong
-                      >XVIII Congreso Iberoamericano de Computación para el
+    </div>
+  </section>
+  <main id="main">
+    <!--- ========================================================================================= -->
+    <section id="informacion" class="pt-12">
+      <div class="">
+        <div
+          class="prose prose-stone max-w-none text-xl prose-p:leading-relaxed prose-a:text-brand-red prose-a:no-underline prose-a:hover:text-brand-red/80 prose-a:transition prose-a:font-bold"
+          data-aos="fade-down"
+        >
+          <section id="" class="max-lg:px-8 lg:max-w-4xl mx-auto py-12">
+            <div class="">
+              <div
+                class="prose prose-stone max-w-none text-xl prose-p:leading-relaxed prose-a:text-brand-red prose-a:no-underline prose-a:hover:text-brand-red/80 prose-a:transition prose-a:font-bold"
+                data-aos="fade-down"
+              >
+                <h2 class="text-3xl text-brand-red text-center">Información</h2>
+                <p class="">
+                  El <strong
+                    >XVIII Congreso Iberoamericano de Computación para el
                     Desarrollo - COMPDES2025 -</strong
-                      > se desarrollará del 23 al 25 de julio de 2025, organizado por
-                    el Centro Universitario de Occidente <span class="italic"
-                      >-CUNOC-</span
-                      > de la Universidad de San Carlos de Guatemala, con la colaboración
-                    de la Universidad de Alcalá (España), en el marco de actividades
-                    de la RED COMPDES.
-                  </p>
-                  <p class="">
-                    <strong>
+                  > se desarrollará del 23 al 25 de julio de 2025, organizado por
+                  el Centro Universitario de Occidente <span class="italic"
+                    >-CUNOC-</span
+                  > de la Universidad de San Carlos de Guatemala, con la colaboración
+                  de la Universidad de Alcalá (España), en el marco de actividades
+                  de la RED COMPDES.
+                </p>
+                <p class="">
+                  <strong>
                     La sede del evento será la ciudad de Quetzaltenango,
                     Guatemala.
-                    </strong>
-                  </p>
-                  <p class="">
-                    La <strong class=""
-                      ><a target="_blank" href="https://www.compdes.org/"
+                  </strong>
+                </p>
+                <p class="">
+                  La <strong class=""
+                    ><a target="_blank" href="https://www.compdes.org/"
                       >Red COMPDES</a
-                      ></strong
-                      > está formada por diez Universidades públicas de Costa Rica,
-                    El Salvador, España, Guatemala, Honduras y Nicaragua y tiene
-                    como finalidad promover el intercambio de conocimiento entre
-                    estudiantes, profesionales, docentes e investigadores de Iberoamérica
-                    que trabajan en impulsar el desarrollo de los sectores de sus
-                    países utilizando las tecnologías de información y comunicación.
-                    Los congresos COMPDES son la actividad más notoria y se celebran
-                    anualmente en una de las Universidades de la Red. (<a
-                      target="_blank"
-                      href="https://www.compdes.org/">web de Red COMPDES</a
-                      >)
-                  </p>
-                </div>
-                <div class="">
-                  <img
-                    src="img/LogoRedCompdes.png"
-                    alt="Red Compdes"
-                    width="1028"
-                    />
-                </div>
-                <h2
-                  class="text-center font-semibold text-brand-red border-t-2 border-b-2 p-4 text-lg"
-                  >
-                  Más Información a Partir de Abril de 2025
-                </h2>
+                    ></strong
+                  > está formada por diez Universidades públicas de Costa Rica, El
+                  Salvador, España, Guatemala, Honduras y Nicaragua y tiene como
+                  finalidad promover el intercambio de conocimiento entre estudiantes,
+                  profesionales, docentes e investigadores de Iberoamérica que trabajan
+                  en impulsar el desarrollo de los sectores de sus países utilizando
+                  las tecnologías de información y comunicación. Los congresos COMPDES
+                  son la actividad más notoria y se celebran anualmente en una de
+                  las Universidades de la Red. (<a
+                    target="_blank"
+                    href="https://www.compdes.org/">web de Red COMPDES</a
+                  >)
+                </p>
               </div>
-            </section>
+              <div class="">
+                <img
+                  src="img/LogoRedCompdes.png"
+                  alt="Red Compdes"
+                  width="1028"
+                />
+              </div>
+              <h2
+                class="text-center font-semibold text-brand-red border-t-2 border-b-2 p-4 text-lg"
+              >
+                Más Información a Partir de Abril de 2025
+              </h2>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!--- ========================================================================================= -->
+      <section
+        id="cronograma"
+        class="commonGreenSection commonGreenSection-bg bg-[url(assets/img/hero-background-mobile.png)] md:bg-[url(assets/img/hero-background.png)] bg-cover bg-center pb-10"
+      >
+        <div class="flex justify-center w-full" data-aos="fade-up">
+          <div class="section-title pb-0! pt-12">
+            <h2 class="fontWhite">Cronograma de actividades</h2>
           </div>
         </div>
-        <!--- ========================================================================================= -->
-        <section id="cronograma" class="commonGreenSection commonGreenSection-bg bg-[url(assets/img/hero-background-mobile.png)] md:bg-[url(assets/img/hero-background.png)] bg-cover bg-center pb-10">
-          <div class="flex justify-center w-full" data-aos="fade-up">
-            <div class="section-title pb-0! pt-12">
-              <h2 class="fontWhite">Cronograma de actividades</h2>
+        <div class="w-10/12 md:w-7/12 lg:6/12 mx-auto relative text-[#B54745]">
+          <div class="border-l-2 mt-10 mb-10">
+            <!-- Tarjeta 1 -->
+            <div
+              class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-brand-red text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <!-- Punto -->
+              <div
+                class="w-5 h-5 bg-brand-red ring-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"
+              >
+              </div>
+              <!--Linea -->
+              <div class="w-10 h-1 bg-white absolute -left-10 z-0"></div>
+              <!--Contenido -->
+              <div class="flex-auto">
+                <h4>Recepción de trabajos</h4>
+                <p>
+                  Período de recepción de trabajos: <br />
+                  <strong>hasta el 30 de mayo 2025</strong>
+                  <br />
+                </p>
+              </div>
             </div>
+            <!-- Tarjeta 2 -->
+            <div
+              class="transform cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-brand-red text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <!-- Punto -->
+              <div
+                class="w-5 h-5 bg-brand-red ring-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"
+              >
+              </div>
+              <!-- Linea -->
+              <div class="w-10 h-1 bg-white absolute -left-10 z-0"></div>
+              <!-- Contenido -->
+              <div class="flex-auto">
+                <h4>Revision de trabajos</h4>
+                <p>
+                  Período de revision de trabajos:<br />
+                  <strong
+                    >progresiva desde el 30 de mayo hasta el 15 de junio</strong
+                  >.
+                </p>
+              </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div
+              class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-brand-red text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <!-- Punto -->
+              <div
+                class="w-5 h-5 bg-brand-red ring-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"
+              >
+              </div>
+              <!-- Linea -->
+              <div class="w-10 h-1 bg-white absolute -left-10 z-0"></div>
+              <!-- Contenido -->
+              <div class="flex-auto">
+                <h4>Entrega versión final</h4>
+                <p>
+                  Entrega de versión final de trabajos:<br />
+                  <strong>hasta el 30 de junio</strong>.
+                </p>
+              </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div
+              class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-brand-red text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <!-- Punto -->
+              <div
+                class="w-5 h-5 bg-brand-red ring-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"
+              >
+              </div>
+              <!-- Linea -->
+              <div class="w-10 h-1 bg-white absolute -left-10 z-0"></div>
+              <!-- Contenido -->
+              <div class="flex-auto">
+                <h4>Celebración del Congreso</h4>
+                <p>
+                  El Congreso COMPDES2025 se llevará a cabo del <strong
+                    >23 al 25 de julio</strong
+                  >.
+                </p>
+              </div>
+            </div>
+            <!-- Tarjeta 5 -->
           </div>
-          <div class="w-10/12 md:w-7/12 lg:6/12 mx-auto relative text-[#B54745] ">
-            <div class="border-l-2 mt-10 mb-10">
-              <!-- Tarjeta 1 -->
-              <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-brand-red text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
-                data-aos="zoom-in" data-aos-delay="300"
-                >
-                <!-- Punto -->
-                <div class="w-5 h-5 bg-brand-red ring-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!--Linea -->
-                <div class="w-10 h-1 bg-white absolute -left-10 z-0"></div>
-                <!--Contenido -->
-                <div class="flex-auto">
-                  <h4>Recepción de trabajos</h4>
-                  <p>Período de recepción de trabajos: <br/>
-                    <strong>hasta el 30 de mayo 2025</strong> <br/>
-                  </p>
-                </div>
-              </div>
-              <!-- Tarjeta 2 -->
-              <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-brand-red text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
-                data-aos="zoom-in" data-aos-delay="300"
-                >
-                <!-- Punto -->
-                <div class="w-5 h-5 bg-brand-red ring-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!-- Linea -->
-                <div class="w-10 h-1 bg-white absolute -left-10 z-0"></div>
-                <!-- Contenido -->
-                <div class="flex-auto">
-                  <h4>Revision de trabajos</h4>
-                  <p>Período de revision de trabajos:<br/> <strong>progresiva desde el 30 de mayo hasta el 15 de junio</strong>.</p>
-                </div>
-              </div>
-              <!-- Tarjeta 3 -->
-              <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-brand-red text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
-                data-aos="zoom-in" data-aos-delay="300"
-                >
-                <!-- Punto -->
-                <div class="w-5 h-5 bg-brand-red ring-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!-- Linea -->
-                <div class="w-10 h-1 bg-white absolute -left-10 z-0"></div>
-                <!-- Contenido -->
-                <div class="flex-auto">
-                  <h4>Entrega versión final</h4>
-                  <p>Entrega de versión final de trabajos:<br/> <strong>hasta el 30 de junio</strong>.</p>
-                </div>
-              </div>
-              <!-- Tarjeta 4 -->
-              <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-brand-red text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
-                data-aos="zoom-in" data-aos-delay="300"
-                >
-                <!-- Punto -->
-                <div class="w-5 h-5 bg-brand-red ring-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!-- Linea -->
-                <div class="w-10 h-1 bg-white absolute -left-10 z-0"></div>
-                <!-- Contenido -->
-                <div class="flex-auto">
-                  <h4>Celebración del Congreso</h4>
-                  <p>El Congreso COMPDES2025 se llevará a cabo del <strong>23 al 25 de julio</strong>.</p>
-                </div>
-              </div>
-              <!-- Tarjeta 5 -->
-            </div>
-          </div>
-        </section>
-        <!--- ========================================================================================= -->
-        <section id="organizacion" class="md:p-10">
-          <div class="container" data-aos="fade-up">
-            <div class="section-title pb-0!">
-              <h2 class="text-[#B54745]! pb-0! margin-b-0! px-6 pt-10 md:pt-0">Organización y Agenda del Evento Presencial</h2>
-            </div>
-            <br />
-
-            <div class="px-6 pb-6 md:max-w-3xl mx-auto">
-              <div class="bg-white p-6 rounded-lg shadow">
-                <!-- Miércoles, 23 de julio -->
-                <div class="mb-8">
-                  <div class="flex flex-row gap-2">
-                    <img src="assets/img/calendar-days.png" class="img-fluid animated w-[20px] h-[20px] mt-1"
-                      alt="calendar-icon">
-                    <h2 class="text-xl font-bold text-gray-800 mb-3">Miércoles, 23 de julio</h2>
-                  </div>
-                  <ul class="list-disc list-inside space-y-2">
-                    <li>
-                      <span class="font-semibold">Inauguración (Horario por confirmar):</span>
-                      <ul class="list-disc list-inside pl-4 mt-2 space-y-1">
-                        <li>Palabras de bienvenida.</li>
-                        <li>Conferencia inaugural (Ponente por definir).</li>
-                        <li>Sesiones técnicas y presentaciones orales.</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-            
-                <!-- Jueves, 24 de julio -->
-                <div class="mb-8">
-                  <div class="flex flex-row gap-2">
-                    <img src="assets/img/calendar-days.png" class="img-fluid animated w-[20px] h-[20px] mt-1"
-                      alt="calendar-icon">
-                      <h2 class="text-xl font-bold text-gray-800 mb-3">Jueves, 24 de julio</h2>
-                  </div>
-                  <ul class="list-disc list-inside space-y-2">
-                    <li>Sesiones paralelas (mañana y tarde).</li>
-                    <li>Reunión de la Red COMPDES (Horario específico por confirmar).</li>
-                    <li>Actividades de networking.</li>
-                  </ul>
-                </div>
-            
-                <!-- Viernes, 25 de julio -->
-                <div>
-                  <div class="flex flex-row gap-2">
-                    <img src="assets/img/calendar-days.png" class="img-fluid animated w-[20px] h-[20px] mt-1"
-                      alt="calendar-icon">
-                      <h2 class="text-xl font-bold text-gray-800 mb-3">Viernes, 25 de julio</h2>
-                  </div>
-                 
-                  <ul class="list-disc list-inside space-y-2">
-                    <li>Últimas sesiones técnicas.</li>
-                    <li>Conferencia de clausura (Ponente por definir).</li>
-                    <li>Entrega de reconocimientos.</li>
-                    <li>Clausura oficial.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-
-          </div>
-        </section>
-        <!--- ========================================================================================= -->
-        <section id="contacto" class="commonGreenSection commonGreenSection-bg p-10 md:p-10 bg-[url(assets/img/hero-background-mobile.png)] md:bg-[url(assets/img/hero-background.png)] bg-cover bg-center ">
-          <div class="container w-full mx-auto" data-aos="fade-up">
-            <div class="w-full">
-              <div class="w-full" data-aos="zoom-in" data-aos-delay="300">
-                <div class="fontWhite flex flex-col md:flex-row md:justify-between w-full">
-                  <div class="flex flex-col">
-                    <h2 class="text-[45px] mb-4">
-                      <font color="#A9F5F2">Contacto</font>
-                    </h2>
-                    USAC - Centro Universitario de Occidente<br />
-
-                    <div> Email: <a href="mailto:ingenieria.cunoc@usac.edu.gt">
-                      <font color="#A9F5F2">ingenieria.cunoc@usac.edu.gt</font>
-                      </a>
-                    </div>
-
-                    <div>  Facebook: <a href="https://www.facebook.com/cunocenlinea/?locale=es_LA">
-                      <font color="#A9F5F2">Facebook CUNOC</font>
-                      </a>
-                    </div>
-
-                    <div>  Directorio Telefónico: <a href="https://www.facebook.com/cunocenlinea/?locale=es_LA">
-                      <font color="#A9F5F2">78730000</font>
-                      </a>
-                    </div>
-                   
-                    <img src="assets/img/logo-cunoc.png" class="img-fluid animated w-[350px] mt-6"
-                      alt="Centro Universitario de Occidente">
-                  </div>
-                  <div class="mt-2">
-                    <h3 class="text-[45px] mb-4 text-[#A9F5F2]">Dirección</h3>
-                    Universidad de San Carlos de Guatemala, Centro Universitario de Occidente (Quetzaltenango)
-                    <div class="mt-3">
-                      <div class="md:hidden">
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.6459512479055!2d-91.5376615250521!3d14.84511567104381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e981c19538301%3A0xcc4978b7a2923535!2sCentro%20Universitario%20de%20Occidente!5e0!3m2!1ses!2sgt!4v1744052503609!5m2!1ses!2sgt"
-                          width="310" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                          referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                      <div class="hidden md:block">
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.6459512479055!2d-91.5376615250521!3d14.84511567104381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e981c19538301%3A0xcc4978b7a2923535!2sCentro%20Universitario%20de%20Occidente!5e0!3m2!1ses!2sgt!4v1744052503609!5m2!1ses!2sgt"
-                          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                          referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--- ========================================================================================= -->
+        </div>
       </section>
+      <!--- ========================================================================================= -->
+
+      <section id="participacion" class="py-14">
+        <div class="container mx-auto px-4" data-aos="fade-up">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-slate-400 mb-4">
+              Participación
+            </h2>
+            <p class="text-lg text-gray-700">
+              Para poder recibir el programa del Congreso y los enlaces a las
+              salas virtuales de las conferencias, es preciso que se inscriba
+              completando el formulario respectivo.
+            </p>
+          </div>
+          <div
+            class="bg-white shadow-md rounded-lg p-6 mb-8"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <h3 class="text-2xl font-semibold mb-4 text-teal-700">
+              Instrucciones para Autores
+            </h3>
+            <ul class="list-disc pl-5 space-y-3 text-gray-800">
+              <li>
+                El envío de trabajos y la comunicación con los autores se
+                llevará a cabo dentro de la plataforma
+                <strong>EasyChair</strong>. Todas las contribuciones deberán ser
+                subidas como ficheros PDF en la web:
+                <a
+                  href="https://easychair.org/conferences/?conf=compdes2025"
+                  target="_blank"
+                  class="text-teal-600 hover:text-teal-800 font-medium duration-200 no-underline border-b-1 border-teal-500 hover:border-teal-800 hover:border-b-2 transition"
+                >
+                  https://easychair.org/conferences/?conf=compdes2025
+                </a>
+              </li>
+              <li>
+                Todos los trabajos deberán estar escritos utilizando WORD y
+                utilizar esta
+                <a
+                  href="docs/plantillaPonenciaCompdes.docx"
+                  class="text-teal-600 hover:text-teal-800 font-medium duration-200 no-underline border-b-1 border-teal-500 hover:border-teal-800 hover:border-b-2 transition"
+                  >plantilla compdes</a
+                >. Deben seguir estrictamente sus estilos, márgenes, fuentes,
+                espaciados, etc.
+              </li>
+              <li>
+                Los trabajos pueden ser:
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>
+                    <strong>Artículos largos</strong> (full paper): Máximo 8 páginas.
+                  </li>
+                  <li>
+                    <strong>Artículos cortos</strong> (short paper): Máximo 4 páginas.
+                  </li>
+                  <li>
+                    <strong>Pósters</strong> (formato libre): Hasta 4 páginas.
+                  </li>
+                  <li>
+                    <strong>Talleres:</strong> Las propuestas se enviarán directamente
+                    a la <u>Organización Local del congreso</u>.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Todas las propuestas deberán estar escritas en español y
+                enviadas completas (<u>no se admiten resúmenes</u>). No serán
+                evaluados los trabajos que no sigan el formato o superen las 8
+                páginas.
+              </li>
+              <li>
+                Para la presentación, puede utilizar esta
+                <a
+                  href="docs/COMPDES2024-PlantillaPresentacion.pptx"
+                  class="text-teal-600 hover:text-teal-800 font-medium duration-200 no-underline border-b-1 border-teal-500 hover:border-teal-800 hover:border-b-2 transition"
+                  target="_blank"
+                >
+                  plantilla PowerPoint
+                </a>.
+              </li>
+              <li>
+                Si no ha usado EasyChair, puede revisar este
+                <a
+                  href="docs/COMPDES-GuiaAltaEasyChair.pdf"
+                  class="text-teal-600 hover:text-teal-800 font-medium duration-200 no-underline border-b-1 border-teal-500 hover:border-teal-800 hover:border-b-2 transition"
+                  target="_blank"
+                >
+                  documento de ayuda EasyChair
+                </a>.
+              </li>
+              <li>
+                Durante el Congreso se impartirán varias
+                <strong>Conferencias Plenarias</strong>.
+              </li>
+            </ul>
+          </div>
+          <p
+            class="text-lg text-gray-700 mb-10 bg-gray-100 p-4 rounded flex items-center gap-3"
+          >
+            <InfoIcon />
+            Deberán inscribirse tanto los autores, como las personas que solo deseen
+            asistir al congreso.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="bg-white shadow-md rounded-lg p-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <h4 class="text-xl font-semibold mb-2 text-teal-700">
+                Inscripción en COMPDES 2024
+              </h4>
+              <p class="text-gray-800 mb-4">
+                Para poder participar en el Congreso COMPDES2024 es necesario
+                estar inscrito.<br />
+                El coste de inscripción único es de 40 dólares + 12% de impuestos
+                (44,80$).
+              </p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf-4yGeH2hXn_7-AAKNmtFRKrhP9jCeudEkq5gL831WU1UoyQ/viewform"
+                class="inline-flex items-center gap-2 bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-white hover:text-teal-600 hover:ring hover:ring-teal-500 active:text-teal-800 active:ring-teal-800 transition"
+                target="_blank"
+              >
+                <LinkIcon />
+                Enlace al formulario
+              </a>
+            </div>
+            <div
+              class="bg-white shadow-md rounded-lg p-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <h4 class="text-xl font-semibold mb-2 text-teal-700">Talleres</h4>
+              <p class="text-gray-800 mb-4">
+                Durante el congreso se celebrarán varios talleres presenciales y
+                alguno virtual. Puede acceder aquí al programa de talleres y al
+                formulario de inscripción.
+              </p>
+              <a
+                href="docs/COMPDES2024-ProgramaTalleres.pdf"
+                class="inline-flex items-center gap-2 bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-white hover:text-teal-600 hover:ring hover:ring-teal-500 active:text-teal-800 active:ring-teal-800 transition"
+                target="_blank"
+              >
+                <LinkIcon />
+                Programa Talleres
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- ========================================================================================= -->
+      <section id="organizacion" class="md:p-10">
+        <div class="container mx-auto" data-aos="fade-up">
+          <div class="section-title pb-0!">
+            <h2 class="text-[#B54745]! pb-0! margin-b-0! px-6 pt-10 md:pt-0">
+              Organización y Agenda del Evento Presencial
+            </h2>
+          </div>
+          <br />
+
+          <div class="px-6 pb-6 md:max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-lg shadow">
+              <!-- Miércoles, 23 de julio -->
+              <div class="mb-8">
+                <div class="flex flex-row gap-2">
+                  <img
+                    src="assets/img/calendar-days.png"
+                    class="img-fluid animated w-[20px] h-[20px] mt-1"
+                    alt="calendar-icon"
+                  />
+                  <h2 class="text-xl font-bold text-gray-800 mb-3">
+                    Miércoles, 23 de julio
+                  </h2>
+                </div>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>
+                    <span class="font-semibold"
+                      >Inauguración (Horario por confirmar):</span
+                    >
+                    <ul class="list-disc list-inside pl-4 mt-2 space-y-1">
+                      <li>Palabras de bienvenida.</li>
+                      <li>Conferencia inaugural (Ponente por definir).</li>
+                      <li>Sesiones técnicas y presentaciones orales.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Jueves, 24 de julio -->
+              <div class="mb-8">
+                <div class="flex flex-row gap-2">
+                  <img
+                    src="assets/img/calendar-days.png"
+                    class="img-fluid animated w-[20px] h-[20px] mt-1"
+                    alt="calendar-icon"
+                  />
+                  <h2 class="text-xl font-bold text-gray-800 mb-3">
+                    Jueves, 24 de julio
+                  </h2>
+                </div>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>Sesiones paralelas (mañana y tarde).</li>
+                  <li>
+                    Reunión de la Red COMPDES (Horario específico por
+                    confirmar).
+                  </li>
+                  <li>Actividades de networking.</li>
+                </ul>
+              </div>
+
+              <!-- Viernes, 25 de julio -->
+              <div>
+                <div class="flex flex-row gap-2">
+                  <img
+                    src="assets/img/calendar-days.png"
+                    class="img-fluid animated w-[20px] h-[20px] mt-1"
+                    alt="calendar-icon"
+                  />
+                  <h2 class="text-xl font-bold text-gray-800 mb-3">
+                    Viernes, 25 de julio
+                  </h2>
+                </div>
+
+                <ul class="list-disc list-inside space-y-2">
+                  <li>Últimas sesiones técnicas.</li>
+                  <li>Conferencia de clausura (Ponente por definir).</li>
+                  <li>Entrega de reconocimientos.</li>
+                  <li>Clausura oficial.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-10 w-full flex flex-col justify-center px-6 mb-10 md:mb-4"
+          >
+            <h4 class="text-center mb-6 text-[#B54745] font-bold text-2xl">
+              Fechas importantes
+            </h4>
+            <div
+              class="flex flex-col md:flex-row w-full justify-center gap-8 lg:gap-10"
+            >
+              <div
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+              >
+                <svg
+                  class="w-7 h-7 text-gray-400 mb-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 18"
+                >
+                  <path
+                    d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.546l3.2 3.659a1 1 0 0 0 1.506 0L13.454 14H18a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-8 10H5a1 1 0 0 1 0-2h5a1 1 0 1 1 0 2Zm5-4H5a1 1 0 0 1 0-2h10a1 1 0 1 1 0 2Z"
+                  ></path>
+                </svg>
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+                  >
+                    Recepción de trabajos
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-500">
+                  Período de recepción de trabajos:
+                </p>
+                <span
+                  class="inline-flex font-medium items-center text-teal-600 underline"
+                >
+                  Hasta el 15 de junio 2025
+                </span>
+              </div>
+
+              <div
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+              >
+                <svg
+                  class="w-7 h-7 text-gray-400 mb-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 21 21"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z"
+                  ></path>
+                </svg>
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+                  >
+                    Aceptación de trabajos
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-500">
+                  Período de aceptación de trabajos:
+                </p>
+                <span
+                  class="inline-flex font-medium items-center text-teal-600 underline"
+                >
+                  Progresiva hasta el 30 de junio.
+                </span>
+              </div>
+
+              <div
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+              >
+                <svg
+                  class="w-7 h-7 text-gray-400 mb-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 8h11m0 0-4-4m4 4-4 4m-5 3H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h3"
+                  ></path>
+                </svg>
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+                  >
+                    Envío versión final
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-500">
+                  Envío de versión final de trabajos:
+                </p>
+                <span
+                  class="inline-flex font-medium items-center text-teal-600 underline"
+                >
+                  Hasta el 10 de Julio.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--- ========================================================================================= -->
+      <section
+        id="contacto"
+        class="commonGreenSection commonGreenSection-bg p-10 md:p-10 bg-[url(assets/img/hero-background-mobile.png)] md:bg-[url(assets/img/hero-background.png)] bg-cover bg-center"
+      >
+        <div class="container w-full mx-auto" data-aos="fade-up">
+          <div class="w-full">
+            <div class="w-full" data-aos="zoom-in" data-aos-delay="300">
+              <div
+                class="fontWhite flex flex-col gap-12 md:flex-row md:justify-between w-full"
+              >
+                <div class="flex flex-col">
+                  <h2 class="text-[45px] mb-4">
+                    <font color="#A9F5F2">Contacto</font>
+                  </h2>
+                  USAC - Centro Universitario de Occidente<br />
+
+                  <div>
+                    Email: <a href="mailto:ingenieria.cunoc@usac.edu.gt">
+                      <font color="#A9F5F2">ingenieria.cunoc@usac.edu.gt</font>
+                    </a>
+                  </div>
+
+                  <div>
+                    Facebook: <a
+                      href="https://www.facebook.com/cunocenlinea/?locale=es_LA"
+                    >
+                      <font color="#A9F5F2">Facebook CUNOC</font>
+                    </a>
+                  </div>
+
+                  <div>
+                    Directorio Telefónico: <a
+                      href="https://www.facebook.com/cunocenlinea/?locale=es_LA"
+                    >
+                      <font color="#A9F5F2">78730000</font>
+                    </a>
+                  </div>
+
+                  <h2 class="text-3xl mt-8 mb-4 font-semibold text-teal-200">
+                    Alojamiento
+                  </h2>
+
+                  <p>
+                    Puede descargar <a
+                      class="text-gray-200 underline font-semibold"
+                      href="https://docs.google.com/document/d/1-gv1OC8bW875UdD5rB7AkLTw1LLKOZYeAyxuwnyBjgc/edit?usp=sharing"
+                      target="_blank">aquí</a
+                    > una guía de hoteles para el congreso COMPDES 2025 en la ciudad
+                    de Quetzaltenango.
+                  </p>
+
+                  <img
+                    src="assets/img/logo-cunoc.png"
+                    class="img-fluid animated w-[350px] mt-6"
+                    alt="Centro Universitario de Occidente"
+                  />
+                </div>
+                <div class="mt-2">
+                  <h3 class="text-[45px] mb-4 text-[#A9F5F2]">Dirección</h3>
+                  Universidad de San Carlos de Guatemala, Centro Universitario de
+                  Occidente (Quetzaltenango)
+                  <div class="mt-3">
+                    <div class="md:hidden">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.6459512479055!2d-91.5376615250521!3d14.84511567104381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e981c19538301%3A0xcc4978b7a2923535!2sCentro%20Universitario%20de%20Occidente!5e0!3m2!1ses!2sgt!4v1744052503609!5m2!1ses!2sgt"
+                        width="310"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="hidden md:block">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.6459512479055!2d-91.5376615250521!3d14.84511567104381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e981c19538301%3A0xcc4978b7a2923535!2sCentro%20Universitario%20de%20Occidente!5e0!3m2!1ses!2sgt!4v1744052503609!5m2!1ses!2sgt"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--- ========================================================================================= -->
+
       <!--- ========================================================================================= -->
       <footer id="footer">
         <div class="container mx-auto">
           <div class="subfoot-wrap d-md-flex py-4">
             <div class="me-md-auto text-center text-md-start">
               <div class="subfoot">
-                COMPDES2025 - <strong><span>CUNOC</span></strong> - Centro Universitario
-                de Occidente. Universidad de San Carlos de Guatemala.
+                COMPDES2025 - 
+                <a href="https://www.cunoc.edu.gt/" target="_blank" class="text-teal-200 font-bold underline">
+                  <strong><span>CUNOC</span></strong> - Centro Universitario
+                  de Occidente</a> - Universidad de San Carlos de Guatemala.
+              </div>
+              <div class="subfoot mt-3 opacity-60">
+                <CodeIcon />
+                hecho con
+                <HeartIcon />
+                por
+                <a
+                  href="https://cics-app.vercel.app/"
+                  target="_blank"
+                  class="text-teal-200 font-bold underline"
+                >
+                  Comité de Ingeniería en Ciencias y Sistemas - CICS - CUNOC
+                </a>
               </div>
             </div>
           </div>
@@ -335,5 +718,6 @@ import Layout from "../layouts/Layout.astro";
       <script src="assets/js/isotope.pkgd.min.js" is:inline></script>
       <script src="assets/js/main.js" is:inline></script>
       <script src="assets/js/certificates.js" is:inline></script>
-    </main>
+    </section>
+  </main>
 </Layout>
