@@ -1,0 +1,8 @@
+---
+const { class: className = "", ...props } = Astro.props;
+---
+<details
+  class={`w-full text-sm group border border-gray-300 rounded-2xl [&::details-content]:block,overflow-hidden [&::details-content]:overflow-hidden [&::details-content]:[block-size:0] [&::details-content]:transition-all [&::details-content]:transition-discrete [&::details-content]:ease-out [&::details-content]:duration-500 open:[&::details-content]:[block-size:auto] open:[&::details-content]:[block-size:calc-size(auto,size)] open:[&::svg]:rotate-45 overflow-hidden ${className}`}
+>
+  <slot />
+</details>

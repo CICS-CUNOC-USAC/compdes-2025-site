@@ -1,0 +1,134 @@
+---
+import ExternalLinkIcon from "../icons/ExternalLinkIcon.astro";
+import PlusIcon from "../icons/PlusIcon.astro";
+import CustomDetails from "./CustomDetails.astro";
+---
+
+<div class="space-y-3 select-none">
+  <CustomDetails class="group">
+    <summary class="list-none cursor-pointer p-3 flex items-center gap-2">
+      <PlusIcon
+        class="text-gray-500 group-open:stroke-3 stroke-2 group-open:rotate-45 transition-transform duration-300 group-open:text-brand-red"
+      />
+      Quetzaltenango
+    </summary>
+
+    <main class="p-6 bg-gray-50">
+      <h2 class="text-3xl font-bold text-brand-red !my-4">Quetzaltenango</h2>
+
+      <p class="text-gray-700 mb-6">
+        Quetzaltenango —también llamada Xelajú o Xela— es la cabecera del
+        departamento homónimo y la segunda ciudad más importante de Guatemala.
+        Se asienta en un valle montañoso del altiplano occidental, a <strong
+          >2 333 m</strong
+        > (7 660 pies) sobre el nivel del mar, lo que le confiere su característico
+        clima fresco.
+      </p>
+      <p class="text-gray-700 mb-4">
+        En 2008, el Parlamento Centroamericano (Parlacen) la proclamó <strong
+          >“Capital de Centroamérica”</strong
+        > en reconocimiento a su rica vida cultural e historia como punto de encuentro
+        de pueblos indígenas y criollos.
+      </p>
+      <p class="text-gray-700 mb-6">
+        El nombre “Quetzaltenango” proviene del náhuatl <em
+          >Quetzal-lan-tengo</em
+        >, que significa <strong>“bajo la muralla del quetzal”</strong>.
+      </p>
+      <h3 class="text-2xl font-semibold text-green-800 mb-3">Clima</h3>
+      <ul class="list-disc list-inside text-gray-700 mb-6">
+        <li><strong>Templado-frío</strong> casi todo el año (5°C-22°C).</li>
+        <li>
+          Heladas nocturnas tras la temporada de lluvias (noviembre-febrero).
+        </li>
+        <li>Escarcha matutina y mañanas despejadas en invierno.</li>
+      </ul>
+      <h3 class="text-2xl font-semibold text-green-800 mb-3">
+        Lugares de Interés
+      </h3>
+      <ul class="list-decimal list-inside text-gray-700 space-y-2">
+        <li>
+          <strong>Fuentes Georginas:</strong> Baños termales al aire libre rodeados
+          de neblina.
+        </li>
+        <li>
+          <strong>Laguna de Chicabal:</strong> Lago sagrado en cráter volcánico ideal
+          para senderismo.
+        </li>
+        <li>
+          <strong>Parque Central y Teatro Municipal:</strong> Epicentro cultural
+          con eventos y arquitectura del XIX.
+        </li>
+      </ul>
+      <a
+        href="https://www.guatemala.com/guias/pasatiempos/lugares-turisticos-quetzaltenango-guatemala/"
+        class="bg-slate-500 hover:ring-4 duration-200 ring-slate-400 inline-flex items-center gap-2 transition !text-white hover:!text-black px-10 py-2.5 mt-4 rounded-full hover:bg-transparent font-bold"
+        >Más lugares turísticos en Quetzaltenango
+        <ExternalLinkIcon class="size-4" />
+      </a>
+    </main>
+  </CustomDetails>
+  <CustomDetails>
+    <summary class="list-none cursor-pointer p-3 flex items-center gap-2">
+      <PlusIcon
+        class="text-gray-500 group-open:stroke-3 stroke-2 group-open:rotate-45 transition-transform duration-300 group-open:text-brand-red"
+      />
+      Centro Universitario de Occidente - CUNOC
+    </summary>
+
+    <section id="sobre-cunoc" class="p-6 bg-gray-50">
+      <h2 class="text-3xl font-bold text-brand-red !my-4">CUNOC</h2>
+      <p class="text-gray-700">
+        El Centro Universitario de Occidente (CUNOC) forma parte de la
+        Universidad de San Carlos de Guatemala y es el mayor centro regional en
+        el suroccidente del país. Sus orígenes se remontan a 1876, con la
+        fundación de la <span class="italic">“Universidad de Occidente”</span>,
+        que operó hasta 1879. El 5 de diciembre de 1970 nació el CUNOC como un
+        proyecto experimental para ofrecer educación superior alineada a las
+        necesidades de la región. Hoy, CUNOC es un referente académico que forma
+        profesionales que impulsan el desarrollo de Quetzaltenango y sus
+        alrededores.
+      </p>
+      <div class="mt-4 inline-flex flex-col gap-4 items-stretch">
+        <a
+          href="http://ingenieria.cunoc.usac.edu.gt/"
+          class="bg-slate-500 justify-center hover:ring-4 duration-200 ring-slate-400 flex self-center items-center gap-2 transition !text-white hover:!text-black px-10 py-2.5 rounded-full hover:bg-transparent font-bold w-full "
+          >Página oficial de Ingeniería CUNOC
+          <ExternalLinkIcon class="size-4" />
+        </a>
+        <a
+          href="https://cics-app.vercel.app/"
+          class="bg-slate-500 justify-center hover:ring-4 duration-200 ring-slate-400 flex self-center items-center gap-2 transition !text-white hover:!text-black px-10 py-2.5  rounded-full hover:bg-transparent font-bold w-full "
+          >Aplicación de estudiantes - CICS CUNOC
+          <ExternalLinkIcon class="size-4" />
+        </a>
+        <a
+          href="https://www.cunoc.edu.gt/"
+          class="bg-slate-500 justify-center hover:ring-4 duration-200 ring-slate-400 flex self-center items-center gap-2 transition !text-white hover:!text-black px-10 py-2.5  rounded-full hover:bg-transparent font-bold w-full "
+          >Página oficial del CUNOC
+          <ExternalLinkIcon class="size-4" />
+        </a>
+      </div>
+    </section>
+  </CustomDetails>
+  <CustomDetails>
+    <summary class="list-none cursor-pointer p-3 flex items-center gap-2">
+      <PlusIcon
+        class="text-gray-500 group-open:stroke-3 stroke-2 group-open:rotate-45 transition-transform duration-300 group-open:text-brand-red"
+      />
+      Universidad de San Carlos de Guatemala - USAC
+    </summary>
+
+    <section id="sobre-usac" class="p-6 bg-gray-50">
+      <h2 class="text-3xl font-bold text-brand-red !my-4">USAC</h2>
+      <p class="text-gray-700">
+        La Universidad de San Carlos de Guatemala (USAC), fundada por Real
+        Cédula de Carlos II en 1676 y declarada Pontificia en 1687, es la más
+        antigua y de mayor alcance nacional. Tras la Reforma Universitaria de
+        1944, su autonomía quedó consagrada en la Constitución de 1945. Hoy, la
+        USAC continúa liderando la investigación y formación profesional en todo
+        el país.
+      </p>
+    </section>
+  </CustomDetails>
+</div>
