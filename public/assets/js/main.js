@@ -40,8 +40,8 @@
       }
     })
   }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+  // window.addEventListener('load', navbarlinksActive)
+  // onscroll(document, navbarlinksActive)
 
   const scrollto = (el) => {
     let header = select('#header')
@@ -64,7 +64,9 @@
       if (window.scrollY > 200) {
         selectHeader.classList.add('header-scrolled')
       } else {
-        selectHeader.classList.remove('header-scrolled')
+        if (window.innerWidth > 768){
+          selectHeader.classList.remove('header-scrolled');
+        }
       }
     }
     window.addEventListener('load', headerScrolled)
@@ -117,8 +119,20 @@
       if (select(window.location.hash)) {
         scrollto(window.location.hash)
       }
+    }else{
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
     }
+
+    if (window.innerWidth <= 768) {
+      selectHeader.classList.add('header-scrolled');
+    }
+    
+    
   });
+  
 
   let preloader = select('#preloader');
   if (preloader) {
