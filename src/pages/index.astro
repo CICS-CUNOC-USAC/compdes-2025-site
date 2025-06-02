@@ -7,13 +7,19 @@ import BedIcon from "../components/icons/BedIcon.astro";
 import CompdesColorIcon from "../components/icons/CompdesColorIcon.astro";
 import GeneralInfoSummaries from "../components/partials/GeneralInfoSummaries.astro";
 import Inscriptions from "../components/partials/Inscriptions.astro"
+import ChevronDown from "../components/icons/ChevronDown.astro";
 ---
 
 <Layout>
   <header id="header" class="fixed top-0 w-full pr-3! md:pr-0! header-scrolled">
     <div class="container mx-auto flex items-center justify-between pl-18">
       <h1 class="logo flex items-center gap-4 text-white">
-        <CompdesColorIcon class="hidden md:flex size-10" />
+        <!-- <CompdesColorIcon class="hidden md:flex size-10" /> -->
+         <img
+          src="img/logo_with_year.png"
+          alt="COMPDES 2025 Logo"
+          class="hidden md:flex w-20"
+         />
         <a href="index.html" class="!text-[20px] font-medium">COMPDES 2025</a>
       </h1>
       <nav id="navbar" class="navbar">
@@ -59,7 +65,12 @@ import Inscriptions from "../components/partials/Inscriptions.astro"
           class="flex flex-col justify-start pt-20 md:pt-16 items-center h-full font-poppins"
         >
          
-          <CompdesColorIcon class="size-32 mb-8" />
+          <!-- <CompdesColorIcon class="size-32 mb-8" /> -->
+          <img
+            src="img/logo_with_year.png"
+            alt="COMPDES 2025 Logo"
+            class="w-32 mb-8"
+          />
           <h1
             class="text-[18px]! md:text-[20px]! text-white text-center md:text-start"
           >
@@ -77,8 +88,16 @@ import Inscriptions from "../components/partials/Inscriptions.astro"
           <p class="!text-lg text-white/75 text-center">
             Quetzaltenango, Guatemala del 23 al 25 de julio de 2025
           </p>
+
+          <p class="!text-lg text-white text-center mt-4 mb-8 bg-brand-red/45 p-4 rounded-lg outline outline-brand-red/65">
+            🔔 Ya puedes hacer tu pago de inscripción y completar el registro en la sección <a
+              class="text-white font-bold underline"
+              href="#inscripcion"
+              >Inscripción ↓</a
+            >.
+          </p>
           
-          <ul class="hidden md:flex flex-col md:flex-row items-center text-white gap-10 md:gap-10 md:mt-16">
+          <ul class="hidden md:flex flex-col md:flex-row items-center text-white gap-10 md:gap-10 md:mt-8">
             <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
               <a class="scrollto px-10 py-2.5" href="#informacion">Información</a>
             </li>
@@ -102,6 +121,8 @@ import Inscriptions from "../components/partials/Inscriptions.astro"
             class="flex md:hidden bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white px-10 py-2.5 mt-12 rounded-full hover:bg-transparent font-bold"
             >Conoce más</a
           >
+
+          <ChevronDown class="mt-6 animate-bounce text-white size-12" />
         </div>
       </div>
     </div>
