@@ -6,6 +6,7 @@ import Layout from "../layouts/Layout.astro";
 import BedIcon from "../components/icons/BedIcon.astro";
 import CompdesColorIcon from "../components/icons/CompdesColorIcon.astro";
 import GeneralInfoSummaries from "../components/partials/GeneralInfoSummaries.astro";
+import Inscriptions from "../components/partials/Inscriptions.astro"
 ---
 
 <Layout>
@@ -19,6 +20,9 @@ import GeneralInfoSummaries from "../components/partials/GeneralInfoSummaries.as
         <ul class="flex items-center text-white">
           <li class="relative p-4 md:!text-md">
             <a class="scrollto" href="#informacion">Información</a>
+          </li>
+          <li class="relative p-4">
+            <a class="scrollto" href="#inscripcion">Inscripción</a>
           </li>
           <li class="relative p-4">
             <a class="scrollto" href="#participacion">Participación</a>
@@ -59,7 +63,7 @@ import GeneralInfoSummaries from "../components/partials/GeneralInfoSummaries.as
           <h1
             class="text-[18px]! md:text-[20px]! text-white text-center md:text-start"
           >
-            XVII CONGRESO DE COMPUTACIÓN PARA EL DESARROLLO
+            XVIII CONGRESO DE COMPUTACIÓN PARA EL DESARROLLO
           </h1>
           <div class="flex gap-2 md:gap-5">
             <h2 class="text-[40px]! md:text-[110px]! text-white">
@@ -80,13 +84,13 @@ import GeneralInfoSummaries from "../components/partials/GeneralInfoSummaries.as
             </li>
 
              <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
+              <a class="scrollto px-10 py-2.5" href="#inscripcion">Inscripción</a>
+            </li>
+             <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
               <a class="scrollto px-10 py-2.5" href="#participacion">Participación</a>
             </li>
             <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
               <a class="scrollto px-10 py-2.5" href="#cronograma">Cronograma</a>
-            </li>
-            <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
-              <a class="scrollto px-10 py-2.5" href="#organizacion">Organización</a>
             </li>
             <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
               <a class="scrollto px-10 py-2.5" href="#contacto">Contacto</a>
@@ -364,6 +368,20 @@ import GeneralInfoSummaries from "../components/partials/GeneralInfoSummaries.as
             
           </div> -->
         </div>
+      </section>
+
+      <!--- ============================ INSCRIPCION ======================================== -->
+      <section
+        id="inscripcion"
+        class="commonGreenSection commonGreenSection-bg bg-[url(https://compdes.org/compdes2025/assets/img/hero-background.png)] bg-cover bg-center pb-10"
+      >
+        <div class="flex justify-center w-full" data-aos="fade-up">
+          <div class="section-title pb-0! pt-12">
+            <h2 class="fontWhite">Inscripciones</h2>
+          </div>
+        </div>
+        
+         <Inscriptions />
       </section>
 
       <!--- ========================================================================================= -->
