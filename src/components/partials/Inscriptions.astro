@@ -6,11 +6,11 @@ import CustomDetails from "./CustomDetails.astro";
 
 <div class="space-y-3 select-none px-4 md:px-56 mt-6">
   <CustomDetails>
-    <summary class="list-none cursor-pointer p-3 flex items-center gap-2 text-white">
+    <summary class="list-none cursor-pointer p-3 flex font-semibold items-center gap-2 text-white">
       <PlusIcon
         class="text-white group-open:stroke-3 stroke-2 group-open:rotate-45 transition-transform duration-300 group-open:text-brand-red"
       />
-      NACIONALES
+      <span class="text-3xl mr-1.5">🇬🇹</span> <span class="text-lg group-open:text-white text-white/85">Nacionales</span>
     </summary>
 
     <section id="pago-extranjeros" class="p-6 bg-gray-50">
@@ -29,7 +29,7 @@ import CustomDetails from "./CustomDetails.astro";
           </li>
           <li>
             Para pagos en efectivo, acércate al stand de pago en la entrada del módulo G-Cunoc 
-            desde las 13:00 horas hasta las 17:00 horas de lunes a viernes (durante junio 2025).
+            desde las <span class="font-bold">13:00</span> horas a <span class="font-bold">15:00</span> horas y desde las <span class="font-bold">17:00</span> horas a <span class="font-bold">19:00</span> horas, de lunes a viernes (durante junio 2025).
           </li>
           <li>Guarda tu recibo de pago, boleta bancaria de pago o captura de transferencia exitosa.</li>
           <li>
@@ -58,11 +58,11 @@ import CustomDetails from "./CustomDetails.astro";
   </CustomDetails>
 
   <CustomDetails>
-    <summary class="list-none cursor-pointer p-3 flex items-center gap-2 text-white">
+    <summary class="list-none cursor-pointer p-3 flex font-semibold items-center gap-2 text-white">
       <PlusIcon
         class="text-white group-open:stroke-3 stroke-2 group-open:rotate-45 transition-transform duration-300 group-open:text-brand-red"
       />
-      EXTRANJEROS
+      <span class="text-3xl mr-1.5">✈️</span> <span class="text-lg group-open:text-white text-white/85">Extranjeros</span>
     </summary>
 
     <section id="pago-extranjeros" class="p-6 bg-gray-50">

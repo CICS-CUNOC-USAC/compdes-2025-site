@@ -115,8 +115,8 @@ html {
   pointer-events: none;
 }
 #header.header-scrolled, #header.header-inner-pages {
-  background: #124e57;
-  border-bottom: 1px #fff solid;
+  /* background: #124e57;
+  border-bottom: 1px #fff solid; */
   padding: 12px 0;
   opacity: 1;
   pointer-events: auto;

@@ -6,43 +6,43 @@ import Layout from "../layouts/Layout.astro";
 import BedIcon from "../components/icons/BedIcon.astro";
 import CompdesColorIcon from "../components/icons/CompdesColorIcon.astro";
 import GeneralInfoSummaries from "../components/partials/GeneralInfoSummaries.astro";
-import Inscriptions from "../components/partials/Inscriptions.astro"
+import Inscriptions from "../components/partials/Inscriptions.astro";
 import ChevronDown from "../components/icons/ChevronDown.astro";
 ---
 
 <Layout>
-  <header id="header" class="fixed top-0 w-full pr-3! md:pr-0! header-scrolled">
+  <header id="header" class="fixed top-0 w-full pr-3! md:pr-0! border-none shadow-lg bg-brand-green/85 backdrop-blur-sm header-scrolled">
     <div class="container mx-auto flex items-center justify-between pl-18">
       <h1 class="logo flex items-center gap-4 text-white">
         <!-- <CompdesColorIcon class="hidden md:flex size-10" /> -->
-         <img
+        <img
           src="img/logo_with_year.png"
           alt="COMPDES 2025 Logo"
-          class="hidden md:flex w-20"
-         />
+          class="hidden md:block h-20"
+        />
         <a href="index.html" class="!text-[20px] font-medium">COMPDES 2025</a>
       </h1>
       <nav id="navbar" class="navbar">
         <ul class="flex items-center text-white">
-          <li class="relative p-4 md:!text-md">
+          <li class="relative text-white/80 hover:text-white transition font-medium p-4 md:!text-md">
             <a class="scrollto" href="#informacion">Información</a>
           </li>
-          <li class="relative p-4">
+          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
             <a class="scrollto" href="#inscripcion">Inscripción</a>
           </li>
-          <li class="relative p-4">
+          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
             <a class="scrollto" href="#participacion">Participación</a>
           </li>
-          <li class="relative p-4">
+          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
             <a class="scrollto" href="#cronograma">Cronograma</a>
           </li>
-          <li class="relative p-4">
+          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
             <a class="scrollto" href="#organizacion">Organización</a>
           </li>
-          <li class="relative p-4">
+          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
             <a class="scrollto" href="#contacto">Contacto y Sede</a>
           </li>
-          <li class="relative p-4">
+          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
             <a
               class="nav-link scrollto"
               target="_blank"
@@ -64,7 +64,6 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
         <div
           class="flex flex-col justify-start pt-20 md:pt-16 items-center h-full font-poppins"
         >
-         
           <!-- <CompdesColorIcon class="size-32 mb-8" /> -->
           <img
             src="img/logo_with_year.png"
@@ -89,29 +88,49 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             Quetzaltenango, Guatemala del 23 al 25 de julio de 2025
           </p>
 
-          <p class="!text-lg text-white text-center mt-4 mb-8 bg-brand-red/45 p-4 rounded-lg outline outline-brand-red/65">
-            🔔 Ya puedes hacer tu pago de inscripción y completar el registro en la sección <a
+          <p
+            class="!text-lg text-white text-center mt-4 mb-8 bg-brand-red/45 p-4 rounded-lg outline outline-brand-red/65"
+          >
+            🔔 Ya puedes hacer tu pago de inscripción y completar el registro en
+            la sección <a
               class="text-white font-bold underline"
-              href="#inscripcion"
-              >Inscripción ↓</a
+              href="#inscripcion">Inscripción ↓</a
             >.
           </p>
-          
-          <ul class="hidden md:flex flex-col md:flex-row items-center text-white gap-10 md:gap-10 md:mt-8">
-            <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
-              <a class="scrollto px-10 py-2.5" href="#informacion">Información</a>
+
+          <ul
+            class="hidden md:flex flex-col md:flex-row items-center text-white gap-10 md:gap-10 md:mt-8"
+          >
+            <li
+              class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold"
+            >
+              <a class="scrollto px-10 py-2.5" href="#informacion"
+                >Información</a
+              >
             </li>
 
-             <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
-              <a class="scrollto px-10 py-2.5" href="#inscripcion">Inscripción</a>
+            <li
+              class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold"
+            >
+              <a class="scrollto px-10 py-2.5" href="#inscripcion"
+                >Inscripción</a
+              >
             </li>
-             <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
-              <a class="scrollto px-10 py-2.5" href="#participacion">Participación</a>
+            <li
+              class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold"
+            >
+              <a class="scrollto px-10 py-2.5" href="#participacion"
+                >Participación</a
+              >
             </li>
-            <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
+            <li
+              class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold"
+            >
               <a class="scrollto px-10 py-2.5" href="#cronograma">Cronograma</a>
             </li>
-            <li class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold">
+            <li
+              class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold"
+            >
               <a class="scrollto px-10 py-2.5" href="#contacto">Contacto</a>
             </li>
           </ul>
@@ -321,60 +340,130 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
               completando el formulario respectivo.
             </p>
           </div>
-          <div class="bg-white shadow-md rounded-lg p-6 mb-8" data-aos="zoom-in" data-aos-delay="300">
-            <h3 class="text-2xl font-semibold mb-4 text-teal-700">Instrucciones para Autores</h3>
+          <div
+            class="bg-white shadow-md rounded-lg p-6 mb-8"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <h3 class="text-2xl font-semibold mb-4 text-teal-700">
+              Instrucciones para Autores
+            </h3>
 
-            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">1. Envío de trabajos</h4>
+            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">
+              1. Envío de trabajos
+            </h4>
             <ul class="list-disc pl-5 space-y-3 text-gray-800">
               <li>
-                El envío de trabajos y la comunicación con los autores se llevará a cabo dentro de la plataforma <strong>EasyChair</strong>. Todas las contribuciones deberán ser subidas como ficheros PDF en la web:
-                <a href="https://easychair.org/conferences/?conf=compdes2025" target="_blank" class="text-teal-600 hover:text-teal-800">https://easychair.org/conferences/?conf=compdes2025</a>
+                El envío de trabajos y la comunicación con los autores se
+                llevará a cabo dentro de la plataforma <strong>EasyChair</strong
+                >. Todas las contribuciones deberán ser subidas como ficheros
+                PDF en la web:
+                <a
+                  href="https://easychair.org/conferences/?conf=compdes2025"
+                  target="_blank"
+                  class="text-teal-600 underline font-semibold hover:text-teal-800"
+                  >https://easychair.org/conferences/?conf=compdes2025</a
+                >
               </li>
               <li>
                 Si no ha usado EasyChair, puede revisar este
-                <a href="docs/COMPDES-GuiaAltaEasyChair.pdf" target="_blank" class="text-teal-600 hover:text-teal-800">documento de ayuda EasyChair</a>.
+                <a
+                  href="docs/COMPDES-GuiaAltaEasyChair.pdf"
+                  target="_blank"
+                  class="text-teal-600 hover:text-teal-800 underline font-semibold"
+                  >documento de ayuda EasyChair</a
+                >.
               </li>
             </ul>
 
-            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">2. Formato de los trabajos</h4>
+            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">
+              2. Formato de los trabajos
+            </h4>
             <ul class="list-disc pl-5 space-y-3 text-gray-800">
               <li>
-                Todos los trabajos deberán estar escritos utilizando WORD y utilizar esta
-                <a href="docs/plantillaPonenciaCompdes.docx" class="text-teal-600 hover:text-teal-800">plantilla compdes</a>.
+                Todos los trabajos deberán estar escritos utilizando WORD y
+                utilizar esta
+                <a
+                  href="docs/plantillaPonenciaCompdes.docx"
+                  class="text-teal-600 hover:text-teal-800 underline font-semibold"
+                  >plantilla compdes</a
+                >.
               </li>
               <li>
-                Todas las propuestas deberán estar escritas en español y enviadas completas (<u>no se admiten resúmenes</u>). No serán evaluados los trabajos que no sigan el formato o superen las 8 páginas.
+                Todas las propuestas deberán estar escritas en español y
+                enviadas completas (<u>no se admiten resúmenes</u>). No serán
+                evaluados los trabajos que no sigan el formato o superen las 8
+                páginas.
               </li>
             </ul>
 
-            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">3. Tipos de contribuciones</h4>
+            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">
+              3. Tipos de contribuciones
+            </h4>
             <ul class="list-disc pl-5 space-y-3 text-gray-800">
-              <li><strong>Artículos largos</strong> (full paper): Máximo 8 páginas.</li>
-              <li><strong>Artículos cortos</strong> (short paper): Máximo 4 páginas.</li>
-              <li><strong>Pósters</strong> (formato libre): Hasta 4 páginas.</li>
               <li>
-                <strong>Talleres:</strong> Las propuestas se enviarán directamente a la Organización Local del congreso 
-                <a href="mailto:ingenieria.sistemas@cunoc.edu.gt" class="text-teal-600 hover:text-teal-800">(ingenieria.sistemas@cunoc.edu.gt)</a>.
+                <strong>Artículos largos</strong> (full paper): Máximo 8 páginas.
+              </li>
+              <li>
+                <strong>Artículos cortos</strong> (short paper): Máximo 4 páginas.
+              </li>
+              <li>
+                <strong>Pósters</strong> (formato libre): Hasta 4 páginas.
+              </li>
+              <li>
+                <strong>Talleres:</strong> Las propuestas se enviarán directamente
+                a la Organización Local del congreso
+                <a
+                  href="mailto:ingenieria.sistemas@cunoc.edu.gt"
+                  class="text-teal-600 hover:text-teal-800 underline font-semibold"
+                  >(ingenieria.sistemas@cunoc.edu.gt)</a
+                >.
               </li>
             </ul>
 
-            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">4. Información para Talleres</h4>
+            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">
+              4. Información para Talleres
+            </h4>
             <p class="mb-4">Se deben indicar los siguientes elementos:</p>
             <ul class="list-disc pl-5 space-y-3 text-gray-800">
               <li>Tiempo de duración del taller.</li>
               <li>Cantidad máxima de asistentes al taller.</li>
-              <li>Herramientas de software o hardware que deben llevar los asistentes.</li>
-              <li>Elementos especiales que debe cumplir el espacio donde se desarrollará el taller.</li>
+              <li>
+                Herramientas de software o hardware que deben llevar los
+                asistentes.
+              </li>
+              <li>
+                Elementos especiales que debe cumplir el espacio donde se
+                desarrollará el taller.
+              </li>
+              <li>
+                El respectivo documento deberá estar escrito utilizando <span class="font-medium">Word</span> y utilizar esta
+                <a
+                  href="docs/1-plantilla-talleres.docx"
+                  class="text-teal-600 hover:text-teal-800 underline font-semibold"
+                  >plantilla de taller</a
+                >.
+              </li>
             </ul>
 
-            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">5. Presentación</h4>
+            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">
+              5. Presentación
+            </h4>
             <ul class="list-disc pl-5 space-y-3 text-gray-800">
-              <li>Para la presentación, más adelante compartiremos una plantilla.</li>
+              <li>
+                Para la presentación, más adelante compartiremos una plantilla.
+              </li>
             </ul>
 
-            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">6. Conferencias Plenarias</h4>
+            <h4 class="text-xl font-semibold mt-6 mb-3 text-teal-600">
+              6. Conferencias Plenarias
+            </h4>
             <ul class="list-disc pl-5 space-y-3 text-gray-800">
-              <li>Durante el Congreso se impartirán varias <strong>Conferencias Plenarias</strong>.</li>
+              <li>
+                Durante el Congreso se impartirán varias <strong
+                  >Conferencias Plenarias</strong
+                >.
+              </li>
             </ul>
           </div>
 
@@ -382,8 +471,8 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             class="text-lg text-gray-700 mb-10 bg-gray-100 p-4 rounded flex items-center gap-3"
           >
             <InfoIcon />
-            Deberán inscribirse solo las personas que deseen
-            asistir al congreso, los autores no deben inscribirse.
+            Deberán inscribirse solo las personas que deseen asistir al congreso,
+            los autores no deben inscribirse.
           </p>
           <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
@@ -399,14 +488,21 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
         <div class="flex justify-center w-full" data-aos="fade-up">
           <div class="section-title pb-0! pt-12">
             <h2 class="fontWhite">Inscripciones</h2>
-             <p class="text-md text-white px-4 md:px-56 mb-6">
-              Procedimiento detallado para efectuar tu pago de inscripción y completar el registro en COMPDES 2025, 
-              incluyendo opciones en línea, depósitos, transferencias y pagos en efectivo con instrucciones paso a paso.
+            <p class="text-lg text-white px-4 md:px-56 mb-6">
+              Procedimiento detallado para efectuar tu pago de inscripción y
+              completar el registro en COMPDES 2025, incluyendo opciones en
+              línea, depósitos, transferencias y pagos en efectivo con
+              instrucciones paso a paso.
+            </p>
+            <p class="text text-white font-medium py-6  px-4 md:px-56 mb-6">
+              <span class="text-[#02B990]">Incluye:</span> kit de bienvenida, diploma, refacciones y Acceso completo a ponencias y talleres <br>(hasta agotar cupos)
+
+              
             </p>
           </div>
         </div>
-        
-         <Inscriptions />
+
+        <Inscriptions />
       </section>
 
       <!--- ========================================================================================= -->
