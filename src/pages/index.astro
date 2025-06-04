@@ -94,7 +94,7 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             🔔 Ya puedes hacer tu pago de inscripción y completar el registro en
             la sección <a
               class="text-white font-bold underline"
-              href="#inscripcion">Inscripción ↓</a
+              href="#inscripcion">Inscripción</a
             >.
           </p>
 
@@ -334,12 +334,27 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             <h2 class="text-3xl font-bold text-slate-400 mb-4">
               Participación
             </h2>
-            <p class="text-lg text-gray-700">
+            <p class="text-lg text-gray-700 w-full">
               Para poder recibir el programa del Congreso y los enlaces a las
               salas virtuales de las conferencias, es preciso que se inscriba
               completando el formulario respectivo.
             </p>
           </div>
+
+          <div class="text-lg text-gray-700 mb-10 bg-gray-100 p-4 rounded flex items-center gap-3">
+            <div class="w-10">
+              <InfoIcon />
+            </div>
+    
+            <p class="text-gray-800 my-6 ">
+              
+              Todos los ponentes recibirán un <strong>reconocimiento de participación</strong> y sus contribuciones serán incluidas en un <strong>libro de actas digital</strong> con <strong>ISBN</strong>, editado por la <strong>Editorial de la Universidad de Alcalá</strong>.
+              Puedes consultar el libro de actas del 2023 aquí:
+              <a href="https://www.compdes.org/libros/compdes2023.pdf" target="_blank" class="text-teal-600 hover:text-teal-800">Actas COMPDES 2023</a>.
+            </p>
+          </div>
+          
+
           <div
             class="bg-white shadow-md rounded-lg p-6 mb-8"
             data-aos="zoom-in"
@@ -451,7 +466,12 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             </h4>
             <ul class="list-disc pl-5 space-y-3 text-gray-800">
               <li>
-                Para la presentación, más adelante compartiremos una plantilla.
+                Para la presentación, puede utilizar y basarse en esta plantilla
+                 <a
+                  href="https://docs.google.com/presentation/d/1wEtOp4VWp7Mn0KpJm0koDhi2jLXWmoHdIoIV8rURkdg/edit?slide=id.p#slide=id.p"
+                  class="text-teal-600 hover:text-teal-800 underline font-semibold"
+                  >plantilla de presentacion</a
+                >.
               </li>
             </ul>
 
@@ -468,11 +488,10 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
           </div>
 
           <p
-            class="text-lg text-gray-700 mb-10 bg-gray-100 p-4 rounded flex items-center gap-3"
+            class="text-lg text-gray-800 mb-10 bg-gray-100 p-4 rounded flex items-center gap-3"
           >
             <InfoIcon />
-            Deberán inscribirse solo las personas que deseen asistir al congreso,
-            los autores no deben inscribirse.
+            Deberán inscribirse tanto los autores, como las personas que solo deseen asistir al congreso.
           </p>
           <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
