@@ -4,9 +4,10 @@ import CodeIcon from "../components/icons/CodeIcon.astro";
 import HeartIcon from "../components/icons/HeartIcon.astro";
 import Layout from "../layouts/Layout.astro";
 import BedIcon from "../components/icons/BedIcon.astro";
-import CompdesColorIcon from "../components/icons/CompdesColorIcon.astro";
 import GeneralInfoSummaries from "../components/partials/GeneralInfoSummaries.astro";
 import Inscriptions from "../components/partials/Inscriptions.astro";
+import Tourism from "../components/partials/Tourism.astro";
+import Recommendations from "../components/partials/Recommendations.astro";
 import ChevronDown from "../components/icons/ChevronDown.astro";
 ---
 
@@ -37,10 +38,10 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             <a class="scrollto" href="#cronograma">Cronograma</a>
           </li>
           <li class="relative text-white/80 hover:text-white transition font-medium p-4">
-            <a class="scrollto" href="#organizacion">Organización</a>
+            <a class="scrollto" href="#hospedaje">Hospedaje</a>
           </li>
           <li class="relative text-white/80 hover:text-white transition font-medium p-4">
-            <a class="scrollto" href="#contacto">Contacto y Sede</a>
+            <a class="scrollto" href="#turismo">Turismo</a>
           </li>
           <li class="relative text-white/80 hover:text-white transition font-medium p-4">
             <a
@@ -57,14 +58,13 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
   </header>
 
   <section
-    class="bg-[#124e57] px-4 h-[800px] bg-[url(https://compdes.org/compdes2025/assets/img/hero-background.png)]"
+    class="bg-[#124e57] px-4 h-[820px] bg-[url(https://compdes.org/compdes2025/assets/img/hero-background.png)]"
   >
     <div class="container-fluid h-full" data-aos="fade-up">
       <div class="row justify-content-center h-full">
         <div
           class="flex flex-col justify-start pt-20 md:pt-16 items-center h-full font-poppins"
         >
-          <!-- <CompdesColorIcon class="size-32 mb-8" /> -->
           <img
             src="img/logo_with_year.png"
             alt="COMPDES 2025 Logo"
@@ -88,15 +88,15 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             Quetzaltenango, Guatemala del 23 al 25 de julio de 2025
           </p>
 
-          <p
+         <p
             class="!text-lg text-white text-center mt-4 mb-8 bg-brand-red/45 p-4 rounded-lg outline outline-brand-red/65"
           >
             🔔 Ya puedes hacer tu pago de inscripción y completar el registro en
-            la sección <a
-              class="text-white font-bold underline"
-              href="#inscripcion">Inscripción</a
-            >.
+            la sección <a class="text-white font-bold underline" href="#inscripcion">Inscripción ▼</a>.
+            <br /><br />
+            🎁 <span class="font-semibold">¡Los primeros 100 inscritos participarán en el sorteo de premios exclusivos!</span>
           </p>
+
 
           <ul
             class="hidden md:flex flex-col md:flex-row items-center text-white gap-10 md:gap-10 md:mt-8"
@@ -131,7 +131,13 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             <li
               class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold"
             >
-              <a class="scrollto px-10 py-2.5" href="#contacto">Contacto</a>
+              <a class="scrollto px-10 py-2.5" href="#hospedaje">Hospedaje</a>
+            </li>
+
+             <li
+              class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold"
+            >
+              <a class="scrollto px-10 py-2.5" href="#turismo">Turismo</a>
             </li>
           </ul>
 
@@ -141,7 +147,7 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             >Conoce más</a
           >
 
-          <ChevronDown class="mt-6 animate-bounce text-white size-12" />
+          <ChevronDown class="mt-8 animate-bounce text-white size-12" />
         </div>
       </div>
     </div>
@@ -515,14 +521,33 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             </p>
             <p class="text text-white font-medium py-6  px-4 md:px-56 mb-6">
               <span class="text-[#02B990]">Incluye:</span> kit de bienvenida, diploma, refacciones y Acceso completo a ponencias y talleres <br>(hasta agotar cupos)
-
-              
             </p>
           </div>
         </div>
 
         <Inscriptions />
       </section>
+
+
+      
+      <!--- ============================ TURISMO ======================================== -->
+      <section id="turismo" class="md:p-10">
+        <Tourism />
+      </section>
+
+      <!--- ============================ HOSPEDAJE ======================================== -->
+      <section
+        id="hospedaje"
+        class="commonGreenSection commonGreenSection-bg bg-[url(https://compdes.org/compdes2025/assets/img/hero-background.png)] bg-cover bg-center pb-10"
+      >
+        <div class="flex justify-center w-full" data-aos="fade-up">
+          <div class="section-title pb-0! pt-12">
+           <Recommendations />
+          </div>
+        </div>
+      </section>
+
+
 
       <!--- ========================================================================================= -->
       <section id="organizacion" class="md:p-10">
@@ -720,6 +745,8 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
           </div>
         </div>
       </section>
+
+
       <!--- ========================================================================================= -->
 
       <section
