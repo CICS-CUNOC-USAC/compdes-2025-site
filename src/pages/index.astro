@@ -12,7 +12,10 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
 ---
 
 <Layout>
-  <header id="header" class="fixed top-0 w-full pr-3! md:pr-0! border-none shadow-lg bg-brand-green/85 backdrop-blur-sm header-scrolled">
+  <header
+    id="header"
+    class="fixed top-0 w-full pr-3! md:pr-0! border-none shadow-lg bg-brand-green/85 backdrop-blur-sm header-scrolled"
+  >
     <div class="container mx-auto flex items-center justify-between pl-18">
       <h1 class="logo flex items-center gap-4 text-white">
         <!-- <CompdesColorIcon class="hidden md:flex size-10" /> -->
@@ -25,25 +28,39 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
       </h1>
       <nav id="navbar" class="navbar">
         <ul class="flex items-center text-white">
-          <li class="relative text-white/80 hover:text-white transition font-medium p-4 md:!text-md">
+          <li
+            class="relative text-white/80 hover:text-white transition font-medium p-4 md:!text-md"
+          >
             <a class="scrollto" href="#informacion">Información</a>
           </li>
-          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
+          <li
+            class="relative text-white/80 hover:text-white transition font-medium p-4"
+          >
             <a class="scrollto" href="#inscripcion">Inscripción</a>
           </li>
-          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
+          <li
+            class="relative text-white/80 hover:text-white transition font-medium p-4"
+          >
             <a class="scrollto" href="#participacion">Participación</a>
           </li>
-          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
+          <li
+            class="relative text-white/80 hover:text-white transition font-medium p-4"
+          >
             <a class="scrollto" href="#cronograma">Cronograma</a>
           </li>
-          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
+          <li
+            class="relative text-white/80 hover:text-white transition font-medium p-4"
+          >
             <a class="scrollto" href="#hospedaje">Hospedaje</a>
           </li>
-          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
+          <li
+            class="relative text-white/80 hover:text-white transition font-medium p-4"
+          >
             <a class="scrollto" href="#turismo">Turismo</a>
           </li>
-          <li class="relative text-white/80 hover:text-white transition font-medium p-4">
+          <li
+            class="relative text-white/80 hover:text-white transition font-medium p-4"
+          >
             <a
               class="nav-link scrollto"
               target="_blank"
@@ -88,15 +105,20 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             Quetzaltenango, Guatemala del 23 al 25 de julio de 2025
           </p>
 
-         <p
+          <p
             class="!text-lg text-white text-center mt-4 mb-8 bg-brand-red/45 p-4 rounded-lg outline outline-brand-red/65"
           >
             🔔 Ya puedes hacer tu pago de inscripción y completar el registro en
-            la sección <a class="text-white font-bold underline" href="#inscripcion">Inscripción ▼</a>.
+            la sección <a
+              class="text-white font-bold underline"
+              href="#inscripcion">Inscripción ▼</a
+            >.
             <br /><br />
-            🎁 <span class="font-semibold">¡Los primeros 100 inscritos participarán en el sorteo de premios exclusivos!</span>
+            🎁 <span class="font-semibold"
+              >¡Los primeros 100 inscritos participarán en el sorteo de premios
+              exclusivos!</span
+            >
           </p>
-
 
           <ul
             class="hidden md:flex flex-col md:flex-row items-center text-white gap-10 md:gap-10 md:mt-8"
@@ -134,7 +156,7 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
               <a class="scrollto px-10 py-2.5" href="#hospedaje">Hospedaje</a>
             </li>
 
-             <li
+            <li
               class="relative p-4 bg-brand-red hover:ring-4 duration-200 ring-brand-red transition text-white rounded-full hover:bg-transparent font-bold"
             >
               <a class="scrollto px-10 py-2.5" href="#turismo">Turismo</a>
@@ -347,19 +369,42 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             </p>
           </div>
 
-          <div class="text-lg text-gray-700 mb-10 bg-gray-100 p-4 rounded flex items-center gap-3">
+          <div
+            class="text-lg text-gray-700 mb-10 bg-gray-100 p-4 rounded flex items-center gap-3"
+          >
             <div class="w-10">
               <InfoIcon />
             </div>
-    
-            <p class="text-gray-800 my-6 ">
-              
-              Todos los ponentes recibirán un <strong>reconocimiento de participación</strong> y sus contribuciones serán incluidas en un <strong>libro de actas digital</strong> con <strong>ISBN</strong>, editado por la <strong>Editorial de la Universidad de Alcalá</strong>.
-              Puedes consultar el libro de actas del 2024 aquí:
-              <a href="https://www.compdes.org/libros/compdes2024.pdf" target="_blank" class="text-teal-600 hover:text-teal-800">Actas COMPDES 2024</a>.
-            </p>
+
+            <div>
+              <p class="text-gray-800">
+                <!-- Todos los ponentes recibirán un <strong>reconocimiento de participación</strong> y sus contribuciones serán incluidas en un <strong>libro de actas digital</strong> con <strong>ISBN</strong>, editado por la <strong>Editorial de la Universidad de Alcalá</strong>. -->
+
+                Todos los ponentes recibirán un <strong
+                  >reconocimiento de participación</strong
+                >. Además, las contribuciones podrán ser consideradas para su
+                inclusión en el <strong>libro de actas digital con ISBN</strong
+                >, editado por la
+                <strong>Editorial de la Universidad de Alcalá</strong>. Puedes
+                consultar el libro de actas del 2024 aquí:
+                <a
+                  href="https://www.compdes.org/libros/compdes2024.pdf"
+                  target="_blank"
+                  class="text-teal-600 hover:text-teal-800"
+                  >Actas COMPDES 2024</a
+                >.
+              </p>
+              <p class="mt-2 text-gray-500">
+                Es importante tener en cuenta que, aunque actualmente se están
+                aceptando ponencias y talleres, su inclusión en el libro
+                de actas estará sujeta a evaluación por parte del <strong>
+                  Comité
+                  Científico</strong>. Incluso si la propuesta ya ha sido incluida en la
+                programación del congreso, deberá contar con la aprobación final
+                de dicho comité para formar parte del libro oficial.
+              </p>
+            </div>
           </div>
-          
 
           <div
             class="bg-white shadow-md rounded-lg p-6 mb-8"
@@ -458,7 +503,9 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
                 desarrollará el taller.
               </li>
               <li>
-                El respectivo documento deberá estar escrito utilizando <span class="font-medium">Word</span> y utilizar esta
+                El respectivo documento deberá estar escrito utilizando <span
+                  class="font-medium">Word</span
+                > y utilizar esta
                 <a
                   href="docs/1-plantilla-talleres.docx"
                   class="text-teal-600 hover:text-teal-800 underline font-semibold"
@@ -473,7 +520,7 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             <ul class="list-disc pl-5 space-y-3 text-gray-800">
               <li>
                 Para la presentación, puede utilizar y basarse en esta plantilla
-                 <a
+                <a
                   href="https://docs.google.com/presentation/d/1wEtOp4VWp7Mn0KpJm0koDhi2jLXWmoHdIoIV8rURkdg/edit?slide=id.p#slide=id.p"
                   class="text-teal-600 hover:text-teal-800 underline font-semibold"
                   >plantilla de presentacion</a
@@ -497,7 +544,8 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             class="text-lg text-gray-800 mb-10 bg-gray-100 p-4 rounded flex items-center gap-3"
           >
             <InfoIcon />
-            Deberán inscribirse tanto los autores, como las personas que solo deseen asistir al congreso.
+            Deberán inscribirse tanto los autores, como las personas que solo deseen
+            asistir al congreso.
           </p>
           <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
@@ -519,8 +567,10 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
               línea, depósitos, transferencias y pagos en efectivo con
               instrucciones paso a paso.
             </p>
-            <p class="text text-white font-medium py-6  px-4 md:px-56 mb-6">
-              <span class="text-[#02B990]">Incluye:</span> kit de bienvenida, diploma, refacciones y Acceso completo a ponencias y talleres <br>(hasta agotar cupos)
+            <p class="text text-white font-medium py-6 px-4 md:px-56 mb-6">
+              <span class="text-[#02B990]">Incluye:</span> kit de bienvenida, diploma,
+              refacciones y Acceso completo a ponencias y talleres <br />(hasta
+              agotar cupos)
             </p>
           </div>
         </div>
@@ -528,8 +578,6 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
         <Inscriptions />
       </section>
 
-
-      
       <!--- ============================ TURISMO ======================================== -->
       <section id="turismo" class="md:p-10">
         <Tourism />
@@ -542,12 +590,10 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
       >
         <div class="flex justify-center w-full" data-aos="fade-up">
           <div class="section-title pb-0! pt-12">
-           <Recommendations />
+            <Recommendations />
           </div>
         </div>
       </section>
-
-
 
       <!--- ========================================================================================= -->
       <section id="organizacion" class="md:p-10">
@@ -745,7 +791,6 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
           </div>
         </div>
       </section>
-
 
       <!--- ========================================================================================= -->
 
