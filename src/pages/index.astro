@@ -75,7 +75,7 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
   </header>
 
   <section
-    class="bg-[#124e57] px-4 h-[820px] bg-[url(https://compdes.org/compdes2025/assets/img/hero-background.png)]"
+    class="bg-[#124e57] px-4 h-[1100px] md:h-[850px] bg-[url(https://compdes.org/compdes2025/assets/img/hero-background.png)]"
   >
     <div class="container-fluid h-full" data-aos="fade-up">
       <div class="row justify-content-center h-full">
@@ -105,20 +105,23 @@ import ChevronDown from "../components/icons/ChevronDown.astro";
             Quetzaltenango, Guatemala del 23 al 25 de julio de 2025
           </p>
 
-          <p
-            class="!text-lg text-white text-center mt-4 mb-8 bg-brand-red/45 p-4 rounded-lg outline outline-brand-red/65"
+          <div
+            class="flex flex-col md:flex-row items-center gap-8 !text-lg text-white text-center mt-4 mb-8 bg-brand-red/45 p-4 rounded-lg outline outline-brand-red/65"
           >
-            🔔 Ya puedes hacer tu pago de inscripción y completar el registro en
-            la sección <a
-              class="text-white font-bold underline"
-              href="#inscripcion">Inscripción ▼</a
-            >.
-            <br /><br />
-            <!-- 🎁 <span class="font-semibold"
-              >¡Los primeros 100 inscritos participarán en el sorteo de premios
-              exclusivos!</span
-            > -->
-          </p>
+           <div>
+              <a
+                class="text-white font-bold underline"
+                href='https://compdes.cunoc.edu.gt/'>COMPDES APP ▼</a
+              >
+          
+              <img src="img/qrcode_compdes.cunoc.edu.gt.png" alt="QR App COMPDES" class="w-32 mx-auto mt-4" />
+            </div>
+            <div>
+               ¿Listo para el congreso? Accede a la App COMPDES para asignarte a talleres y revisar tu inscripción 
+              <br />  
+            <span class="font-bold">NOS VEMOS EL MIERCOLES 23 DE JULIO</span>
+            </div>
+          </div>
 
           <ul
             class="hidden md:flex flex-col md:flex-row items-center text-white gap-10 md:gap-10 md:mt-8"
